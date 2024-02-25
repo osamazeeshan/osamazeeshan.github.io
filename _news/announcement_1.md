@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started PhD in Computer Vision.
+Started a Ph.D. in Imaging, Vision, and Artificial Intelligence.
