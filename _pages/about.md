@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://liviamtl.ca/pages/current-students/muhammad-osama-zeeshan/'>Affiliations</a>. 1100 Notre-Dame St W, Montreal, Quebec H3C 1K3.
 
 profile:
   align: right
@@ -19,8 +19,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-👋 Hi, I’m @osamazeeshan
+👋 Hi, 
+
 👀 I’m a Developer - Consultant - Student - ML Researcher ~ interested in developing platforms that can have an impact
+
 🌱 I’m currently working on weaklysupervised/unsupervised learning for detecting ambivalence in human behavior changes using domain adaptation
-📫 osamaz.oz31@gmail.com; https://www.linkedin.com/in/osama-zeeshan-b458317b/
+
 📚 Doctorate student at LIVIA
