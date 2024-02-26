@@ -71,9 +71,9 @@ github_username: # your GitHub user name
 gitlab_username: # your GitLab user name
 x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
+linkedin_username: muhammad-osama-zeeshan-b458317b # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+scholar_userid: 96eV9V0AAAAJ&hl # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
@@ -158,8 +158,8 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+  - name: 
+    rss_url: 
 
 # -----------------------------------------------------------------------------
 # Collections
