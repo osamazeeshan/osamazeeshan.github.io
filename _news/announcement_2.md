@@ -1,7 +1,7 @@
 ---
 layout: post
 # title: Presented my work on "Unsupervised domain adaptation for Automated Expression Recognition".
-date: 2023-18-06
+date: 2023-06-18
 inline: true
 related_posts: false
 ---
