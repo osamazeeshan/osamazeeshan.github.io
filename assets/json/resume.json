@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Muhammad Osama Zeeshan",
-    "label": "Scientist",
+    "label": "Software Developer and DL Researcher",
     "image": "",
     "email": "osamaz dot oz31 at gmail dot com",
     "phone": "(438) 357-6482",
@@ -19,7 +19,7 @@
       "name": "Institute for Advanced Study, Princeton University",
       "position": "Doctoral Candidate and Computer Vision Researcher",
       "url": "https://liviamtl.ca/pages/current-students/muhammad-osama-zeeshan/",
-      "startDate": "2022-01-01",
+      "startDate": "2022",
       "summary": "Working on developing a human behavioral intervention system, where my primary focus is on utilizing deep learning models for video-based expression recognition.",
       "highlights": ["Relativity"]
     }
@@ -31,7 +31,7 @@
       "url": "https://www.etsmtl.ca/",
       "area": "Artificial Intelligence",
       "studyType": "PhD",
-      "startDate": "2022-01-01"
+      "startDate": "2022"
     }
   ],
   "awards": [
