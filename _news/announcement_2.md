@@ -1,12 +1,12 @@
 ---
 layout: post
 # title: Presented my work on "Unsupervised domain adaptation for Automated Expression Recognition".
-date: 2023-06-18
+date: 2024-03-01
 inline: true
 related_posts: false
 ---
 
-Presented my work on "Unsupervised domain adaptation for Automated Expression Recognition".
+"Subject based domain adaptation for facial expression recognition." 18th IEEE International Conference on Automatic Face and Gesture Recognition
 
 <!-- Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
 

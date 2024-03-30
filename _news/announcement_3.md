@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-07-03
+date: 2024-03-01
 inline: true
 related_posts: false
 ---
 
-Organized and mentored a summer school: Part of "FRSQ Research Chair in Artificial Intelligence and Digital Health for Health Behaviour Change".
+"Distilling Privileged Multimodal Information for Expression Recognition using Optimal Transport." 18th IEEE International Conference on Automatic Face and Gesture Recognition
