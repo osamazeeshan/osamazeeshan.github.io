@@ -18,8 +18,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-👀 I’m a "Developer" "Consultant" "Student" "ML Researcher" 
+👀 <string>Hi!</strong>, I’m a <em>Developer, Consultant, 📚 Doctorate Student, and ML Researcher. </em> with a 9+ years of experience working in the industry and research institute. My research interest focused on developing real-time, robust applications by blending computer vision and deep learning techniques. More specifically, I worked on the imagery data by extracting, localizing, and recognizing pat- terns/objects/content from the videos’. 
 
-🌱 I’m currently working on unsupervised learning for detecting ambivalence in human behavior changes using domain adaptation techniques.
-
-📚 Doctorate student at LIVIA
+🌱 Currently, I am pursing Ph.D. on <em>Adaptation of Deep Learning Models for Video-Based Expression Recognition</em> under the supervision of Prof. Eric Granger and Prof. Marco Pedersoli.
