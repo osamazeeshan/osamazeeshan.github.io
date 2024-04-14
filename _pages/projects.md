@@ -1,7 +1,7 @@
 ---
 layout: page
 title: projects
-permalink: /projects/
+# permalink: /projects/
 description: Collection of some of my projects.
 nav: true
 nav_order: 2
