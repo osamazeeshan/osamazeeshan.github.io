@@ -5,7 +5,7 @@ description: Real-time suspect detection
 img: assets/img/susp_det_1.jpg
 importance: 1
 category: fun
-related_publications: true
+related_publications: false
 ---
 
 <!-- Weapon detection -->
@@ -27,4 +27,4 @@ Detection of suspicious person
     </div>
 </div>
 
-[Github](https://github.com/osamazeeshan/Suspect-Detection/tree/main)
+For code please visit: [Github](https://github.com/osamazeeshan/Suspect-Detection/tree/main)
