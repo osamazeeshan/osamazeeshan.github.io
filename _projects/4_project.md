@@ -1,26 +1,45 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
+title: Material Pakistan
+description: A live wallpaper app to show the astonishing monuments of Pakistan
+img: assets/img/mp_splash_image.jpg
+importance: 2
 category: fun
 ---
 
 <!-- Material Pakistan -->
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+A live wallpaper app to show the astonishing monuments of Pakistan
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## About
+Ever since we were young we saw that there was very little Pakistani content in the digital world. So we embarked on this journey to create as much content as we can in our free time!
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+
+### There are five variants of each six monuments which change with time
+
+### Morning
+
+<p align="center"> <img src="assets/img/mp/quaid_morning.jpg" width="180" height="300"> <img src="assets/img/mp/minare_pak_morning.jpg" width="180" height="300"> <img src="assets/img/mp/monument_morning.jpg" width="180" height="300"> </p>
+
+### Afternoon
+
+<p align="center"> <img src="assets/img/mp/quaid_afternoon.jpg" width="180" height="300"> <img src="assets/img/mp/minare_pak_afternoon.jpg" width="180" height="300"> <img src="assets/img/mp/monument_afternoon.jpg" width="180" height="300"> </p>
+
+### Evening
+
+<p align="center"> <img src="assets/img/mp/quaid_evening.jpg" width="180" height="300"> <img src="assets/img/mp/minare_pak_evening.jpg" width="180" height="300"> <img src="assets/img/mp/monument_evening.jpg" width="180" height="300"> </p>
+
+### Night
+
+<p align="center"> <img src="assets/img/mp/quaid_night.jpg" width="180" height="300"> <img src="assets/img/mp/minare_pak_night.jpg" width="180" height="300"> <img src="assets/img/mp/monument_night.jpg" width="180" height="300"> </p>
+
+### Night (dark version)
+
+<p align="center"> <img src="assets/img/mp/quaid_night_black.jpg" width="180" height="300"> <img src="assets/img/mp/minare_pak_night_black.jpg" width="180" height="300"> <img src="assets/img/mp/monument_night_black.jpg" width="180" height="300"> </p>
+
+
+### All of the wallpapers were designed by <a href="https://www.linkedin.com/in/imsalmanafzal/">Salman Afzal</a>.
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
