@@ -15,7 +15,7 @@ A live wallpaper app to show the astonishing monuments of Pakistan
 Ever since we were young we saw that there was very little Pakistani content in the digital world. So we embarked on this journey to create as much content as we can in our free time!
 
 
-### There are five variants of each six monuments which change with time
+There are five variants of each six monuments which change with time
 
 ### Morning
 
@@ -91,4 +91,4 @@ Ever since we were young we saw that there was very little Pakistani content in 
 All of the wallpapers were designed by <a href="https://www.linkedin.com/in/imsalmanafzal/">Salman Afzal</a>.
 
 
-For code please visit: [Github](https://github.com/osamazeeshan/Suspect-Detection/tree/main)
+For code please visit: [Github](https://github.com/osamazeeshan/Material-Pakistan)

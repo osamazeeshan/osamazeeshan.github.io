@@ -5,7 +5,7 @@ permalink: /projects/
 description: Collection of some of my projects.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [fun]
 ---
 
 <!-- pages/projects.md  -->
