@@ -15,7 +15,6 @@ Real-time suspect detection using [Face Recognition](https://github.com/ageitgey
 Detection of weapon (gun) in an image and in real-time
 Detection of suspicious person
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/susp_det_2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -65,7 +64,7 @@ Here's the code for the last row of images above:
 
 {% raw %} -->
 
-```html
+<!-- ```html
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -76,4 +75,4 @@ Here's the code for the last row of images above:
 </div>
 ```
 
-{% endraw %}
+{% endraw %} -->

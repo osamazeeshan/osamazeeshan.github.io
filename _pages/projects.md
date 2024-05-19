@@ -8,11 +8,11 @@ nav_order: 2
 display_categories: [work, fun]
 ---
 
-<!-- pages/projects.md -->
-<!-- <div class="projects"> -->
+<!-- pages/projects.md  -->
+ <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
-  <!-- <!-- {% for category in page.display_categories %} -->
+  {% for category in page.display_categories %}
   <a id="{{ category }}" href=".#{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
@@ -36,11 +36,11 @@ display_categories: [work, fun]
   {% endif %}
   {% endfor %}
 
-<!-- {% else %} -->
+{% else %}
 
 <!-- Display projects without categories -->
 
-<!-- {% assign sorted_projects = site.projects | sort: "importance" %} -->
+{% assign sorted_projects = site.projects | sort: "importance" %}
 
   <!-- Generate cards for each project -->
 
