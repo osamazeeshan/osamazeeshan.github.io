@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Muhammad Osama Zeeshan",
-    "label": "Software Developer and DL Researcher",
+    "label": "Software Developer and ML Researcher",
     "image": "",
     "email": "osamaz dot oz31 at gmail dot com",
     "phone": "(438) 357-6482",
@@ -16,9 +16,9 @@
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Doctoral Candidate and Computer Vision Researcher",
-      "url": "https://liviamtl.ca/pages/current-students/muhammad-osama-zeeshan/",
+      "name": "LIVIA and ILLS Lab, École de technologie supérieure (ÉTS)",
+      "position": "Computer Vision Researcher",
+      "url": "https://www.etsmtl.ca/en/labs/livia",
       "startDate": "2022",
       "summary": "Working on developing a human behavioral intervention system, where my primary focus is on utilizing deep learning models for video-based expression recognition.",
       "highlights": ["Relativity"]
@@ -35,6 +35,11 @@
     }
   ],
   "awards": [
+    {
+      "title": "Ph.D. Fellowship",
+      "date": "2022-01-01",
+      "awarder": "ETS, Canada"
+    },
     {
       "title": "Awarded HEC fellowship in Bachelors",
       "date": "2013-01-01",

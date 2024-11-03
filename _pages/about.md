@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://liviamtl.ca/pages/current-students/muhammad-osama-zeeshan/'>Affiliations</a>. 1100 Notre-Dame St W, Montreal, Quebec H3C 1K3.
+subtitle: <a href='https://www.etsmtl.ca/laboratoires/livia/equipe'>Affiliations</a>. 1100 Notre-Dame St W, Montreal, Quebec H3C 1K3.
 
 profile:
   align: right
