@@ -20,6 +20,6 @@ social: true # includes social icons at the bottom of the page
 
 👀 <strong>Hello there! Thank you for visiting my page.</strong> 
 
-I’m a <em>Developer, Consultant, ML Researcher, and 📚 Doctorate Student. </em> with 9+ years of experience working in the industry and research institute. My research interest focused on developing real-time, robust applications by blending computer vision and deep learning techniques. Mainly by extracting, localizing, and recognizing patterns in the imagery data.
+I’m a <em>Developer, Consultant, ML Researcher, and 📚 Doctorate Candidate. </em> with 9+ years of experience working in the industry and research institute. My research interest focused on developing real-time, robust applications by blending computer vision and deep learning techniques. Mainly by extracting, localizing, and recognizing patterns in the imagery data.
 
-🌱 Currently, I am pursing Ph.D. on <em>Adaptation of Deep Learning Models for Video-Based Expression Recognition</em> under the supervision of Prof. Eric Granger and Prof. Marco Pedersoli.
+🌱 Currently, I am pursing Ph.D. on <em>Adaptation of Deep Learning Models for Video-Based Expression Recognition</em> under the supervision of Prof. Eric Granger <a href='https://www.etsmtl.ca/etudier-a-lets/corps-enseignant/egranger'> and Prof. Marco Pedersoli <a href='https://www.etsmtl.ca/etudier-a-lets/corps-enseignant/mpedersoli'>.
