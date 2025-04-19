@@ -3,7 +3,7 @@ layout: page
 title: Suspect Detection
 description: Real-time suspect detection
 img: assets/img/susp_det_1.jpg
-importance: 1
+importance: 4
 category: fun
 related_publications: false
 ---

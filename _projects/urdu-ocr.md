@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Urdu OCR
 description: Optical Character Recognition system for Urdu language text with video indexing capabilities.
 img: assets/img/urdu-ocr.jpg

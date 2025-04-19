@@ -1,9 +1,11 @@
 ---
+layout: page
 title: Sperm Analysis Tool
 description: AI-powered sperm analysis and fertility assessment system with real-time CASA capabilities.
 img: assets/img/sperm-analysis.jpg
 importance: 3
 category: work
+related_publications: false
 ---
 
 Pioneered unsupervised classification of human sperm cells using k-means clustering and morphological analysis. Co-developed Computer-Aided Sperm Analysis (CASA) system enabling real-time semen analysis at 20 FPS for clinical diagnostics.

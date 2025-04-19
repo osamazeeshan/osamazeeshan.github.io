@@ -1,9 +1,11 @@
 ---
+layout: page
 title: StepSolar
 description: World's most accurate solar potential assessment platform with advanced sky-region detection.
 img: assets/img/stepsolar.jpg
 importance: 2
 category: work
+related_publications: false
 ---
 
 Designed a sky-region detection algorithm leveraging region growing segmentation, HSV thresholding, and edge detection to enable ground-based solar irradiance measurements. Spearheaded development of Step Solar Android app with Google Maps and Solmetric API integration, and SQLite database design. Recognized as "The World's Most Accurate Shading Tool" in a University of Oregon validation report.
