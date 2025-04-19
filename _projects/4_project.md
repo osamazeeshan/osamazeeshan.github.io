@@ -1,94 +1,53 @@
 ---
 layout: page
-title: Material Pakistan
-description: A live wallpaper app to show the astonishing monuments of Pakistan
-img: assets/img/mp_splash_image.jpg
-importance: 5
-category: fun
+title: Urdu OCR
+description: Optical Character Recognition system for Urdu language text with video indexing capabilities.
+img: assets/img/urdu-ocr.jpg
+importance: 4
+category: work
 ---
 
-<!-- Material Pakistan -->
-
-A live wallpaper app to show the astonishing monuments of Pakistan
-
-## About
-Ever since we were young we saw that there was very little Pakistani content in the digital world. So we embarked on this journey to create as much content as we can in our free time!
-
-
-There are five variants of each six monuments which change with time
-
-### Morning
+Developed a custom Urdu OCR pipeline using OpenCV and Tesseract, achieving 88% accuracy in detecting/recognizing Urdu text from low-resolution news videos. Built a content-based video indexing system (Python, TensorFlow) for news archives, reducing search time by 60% across 10,000+ hours of footage.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/quaid_morning.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/urdu-ocr-1.jpg" title="Text Detection Pipeline" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/minare_pak_morning.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/urdu-ocr-2.jpg" title="Recognition Results" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/monument_morning.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/urdu-ocr-3.jpg" title="Video Indexing System" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
-### Afternoon
+### Text Detection Pipeline
+- Implemented region-based text detection using OpenCV
+- Developed custom preprocessing techniques for low-resolution video frames
+- Created specialized filters for Urdu text enhancement
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/quaid_afternoon.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/minare_pak_afternoon.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/monument_afternoon.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+### Recognition System
+- Fine-tuned Tesseract OCR for Urdu language
+- Implemented deep learning models for text recognition
+- Developed post-processing algorithms for accuracy improvement
 
-### Evening
+### Video Indexing System
+- Built content-based video indexing using TensorFlow
+- Implemented keyframe extraction and metadata tagging
+- Created semantic querying capabilities
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/quaid_evening.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/minare_pak_evening.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/monument_evening.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+### Results
+- 88% accuracy in Urdu text detection/recognition
+- 60% reduction in search time across 10,000+ hours of footage
+- Published in EURASIP Journal on Image and Video Processing
 
-### Night
+### Publication
+[Detection and recognition of cursive text from video frames](https://link.springer.com/article/10.1186/s13640-020-00523-5)
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/quaid_night.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/minare_pak_night.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/monument_night.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-### Night (dark version)
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/quaid_night_black.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/minare_pak_night_black.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/mp/monument_night_black.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-
-All of the wallpapers were designed by <a href="https://www.linkedin.com/in/imsalmanafzal/">Salman Afzal</a>.
-
-
-For code please visit: [Github](https://github.com/osamazeeshan/Material-Pakistan)
+### Technologies Used
+- Python
+- TensorFlow
+- OpenCV
+- Tesseract OCR
+- Video Processing
+- Deep Learning 

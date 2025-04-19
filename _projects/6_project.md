@@ -3,7 +3,7 @@ layout: page
 title: Sperm Analysis Tool
 description: AI-powered sperm analysis and fertility assessment system with real-time CASA capabilities.
 img: assets/img/sperm-analysis.jpg
-importance: 3
+importance: 5
 category: work
 related_publications: false
 ---
