@@ -2,7 +2,7 @@
 layout: page
 title: Sperm Analysis Tool
 description: AI-powered sperm analysis and fertility assessment system with real-time CASA capabilities.
-img: assets/img/sperm-analysis.jpg
+img: assets/img/morphic.jpg
 importance: 5
 category: work
 related_publications: false
@@ -12,13 +12,13 @@ Pioneered unsupervised classification of human sperm cells using k-means cluster
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/sperm-analysis-1.jpg" title="Cell Classification" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/head.png" title="Head Classification" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/sperm-analysis-2.jpg" title="Real-time Analysis" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/tail.jpg" title="Tail Tracking" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/sperm-analysis-3.jpg" title="Clinical Interface" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/real-time.png" title="Real-time Clinical Interface" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
