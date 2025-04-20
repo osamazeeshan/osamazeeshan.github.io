@@ -8,7 +8,7 @@ category: work
 related_publications: false
 ---
 
-Pioneered unsupervised classification of human sperm cells using k-means clustering and morphological analysis. Co-developed Computer-Aided Sperm Analysis (CASA) system enabling real-time semen analysis at 20 FPS for clinical diagnostics.
+Pioneered unsupervised classification of human sperm cells using k-means clustering and morphological analysis. Co-developed Computer-Aided Sperm Analysis (CASA) system enabling real-time semen analysis for clinical diagnostics.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -23,35 +23,20 @@ Pioneered unsupervised classification of human sperm cells using k-means cluster
 </div>
 
 ### Unsupervised Classification System
-- Implemented k-means clustering for sperm cell classification
+- Implemented k-means clustering for sperm cell classification (Head and Tail)
 - Developed morphological analysis algorithms
 - Created feature extraction pipeline for cell characteristics
 - Built automated classification system
 
 ### Computer-Aided Sperm Analysis (CASA)
-- Developed real-time processing system (20 FPS)
+- Developed real-time processing system
 - Implemented automated motility analysis
 - Created morphology assessment algorithms
 - Built clinical diagnostic interface
 
-### Results
-- Real-time semen analysis at 20 FPS
-- Automated clinical diagnostics
-- High-accuracy sperm cell classification
-- Efficient processing pipeline
-
 ### Technologies Used
-- Python
-- Deep Learning
+- C#
+- Unsupervised Learning
 - Computer Vision
 - Medical Imaging
 - k-means Clustering
-- Real-time Processing
-- Secure Cloud Storage
-
-### Key Features
-- Unsupervised classification of sperm cells
-- Real-time analysis capabilities
-- Automated clinical diagnostics
-- Secure data handling
-- HIPAA compliant storage 

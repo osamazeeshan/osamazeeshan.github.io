@@ -8,7 +8,7 @@ category: work
 related_publications: false
 ---
 
-Designed a sky-region detection algorithm leveraging region growing segmentation, HSV thresholding, and edge detection to enable ground-based solar irradiance measurements. Spearheaded development of Step Solar Android app with Google Maps and Solmetric API integration, and SQLite database design. Recognized as "The World's Most Accurate Shading Tool" in a University of Oregon validation report.
+Designed a sky-region detection algorithm leveraging region growing segmentation, and edge detection to enable ground-based solar irradiance measurements. Spearheaded development of Step Solar Android app with Google Maps and Solmetric API integration, and SQLite database design. Recognized as "The World's Most Accurate Shading Tool" in a University of Oregon validation report.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -50,7 +50,6 @@ Designed a sky-region detection algorithm leveraging region growing segmentation
 - Computer Vision
 - Image Processing
 - Region Growing Segmentation
-- HSV Thresholding
 - Edge Detection
 
 ### Project Links
