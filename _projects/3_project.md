@@ -4,7 +4,7 @@ title: Simple Flash Light (Android)
 description: Shake it!
 img: assets/img/launch.png
 importance: 3
-category: fun
+category: side-projects
 related_publications: false
 ---
 

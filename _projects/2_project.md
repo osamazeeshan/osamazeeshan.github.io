@@ -4,7 +4,7 @@ title: Material Pakistan
 description: A live wallpaper app to show the astonishing monuments of Pakistan
 img: assets/img/mp_splash_image.jpg
 importance: 2
-category: fun
+category: side-projects
 ---
 
 <!-- Material Pakistan -->
