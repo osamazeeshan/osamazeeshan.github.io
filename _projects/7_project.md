@@ -1,8 +1,9 @@
 ---
+layout: page
 title: BloodCare
 description: Android app connecting users with blood donors, healthcare providers, and emergency services in real-time.
 img: assets/img/bloodcare.png
-importance: 7
+importance: 1
 category: side-projects
 ---
 
@@ -49,3 +50,6 @@ Blood Care is an Android app designed to connect users with blood donors, health
 - Location Services
 - Push Notifications
 - Material Design 
+
+### Project Links
+- [GitHub Repository](https://github.com/osamazeeshan/BloodCare) 
