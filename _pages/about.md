@@ -23,3 +23,5 @@ social: true # includes social icons at the bottom of the page
 I’m a <em>Developer, Consultant, ML Researcher, and 📚 Doctorate Candidate. </em> with 9+ years of experience working in the industry and research institute. My research interest focused on developing real-time, robust applications by blending computer vision and deep learning techniques. Mainly by extracting, localizing, and recognizing patterns in the imagery data.
 
 🌱 Currently, I am pursing Ph.D. on <em>Adaptation of Deep Learning Models for Video-Based Expression Recognition</em> under the supervision of <a href='https://www.etsmtl.ca/etudier-a-lets/corps-enseignant/egranger'>Prof. Eric Granger</a> and <a href='https://www.etsmtl.ca/etudier-a-lets/corps-enseignant/mpedersoli'>Prof. Marco Pedersoli</a>.
+
+🏆 FRQNT Scholar 
