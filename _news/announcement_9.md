@@ -1,7 +1,6 @@
 ---
-title: FRQNT Scholarship Award
 layout: post
-date: 2025-05
+date: 2025-05-15
 inline: true
 related_posts: false
 ---
