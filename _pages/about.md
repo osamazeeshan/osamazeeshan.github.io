@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-👀 <strong>Hello there! Thank you for visiting my page.</strong> 
+👋 <strong>Welcome to my academic and professional journey!</strong>
 
 I’m a <em>Developer, Consultant, ML Researcher, and 📚 Doctorate Candidate. </em> with 9+ years of experience working in the industry and research institute. My research interest focused on developing real-time, robust applications by blending computer vision and deep learning techniques. Mainly by extracting, localizing, and recognizing patterns in the imagery data.
 
