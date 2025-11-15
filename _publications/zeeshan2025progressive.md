@@ -6,130 +6,137 @@ bibtex_key: zeeshan2025progressive
 
 # Bringing Personalization to Facial Expression Recognition
 
+### Progressive Multi-Source Domain Adaptation (P-MSDA)
+
 **Based on our publication in *IEEE Transactions on Affective
 Computing***
-
-Facial Expression Recognition (FER) is becoming a crucial component in
-many real-world systems --- from driver monitoring and clinical pain
-assessment to intelligent tutoring and human--computer interaction. Yet
-even with today's deep learning models, a major challenge persists:
-
-> **People express emotions differently.**
-
-Variations in age, gender, ethnicity, facial structure, and even camera
-conditions cause models to fail when deployed on a new person.
-
-This makes **personalized FER** essential. However, most methods either
-require labeled personal data (which is impractical) or fail to
-generalize due to large domain shifts between individuals.
-
-In our recent work, we introduce **Progressive Multi-Source Domain
-Adaptation (P-MSDA)** --- a curriculum-inspired strategy that adapts a
-model to a new, unlabeled target individual progressively.
 
 ------------------------------------------------------------------------
 
 ## 🔍 Problem Overview
 
-Multi-source domain adaptation (MSDA) assumes using **all available
-subjects** as sources will make the model more robust. Surprisingly, our
-analysis shows this is not true.
+Multi-source domain adaptation (MSDA) traditionally assumes using **all
+available subjects** as sources improves performance.\
+However, **Fig. 1** clearly shows why this fails:
 
--   Some source subjects differ drastically from the target.
--   Many introduce **negative transfer**.
--   Using all sources increases computational cost without improving
-    generalization.
+![Figure 1 --- Comparison of traditional MSDA vs. Progressive
+MSDA](pmsda_fig_1.png)
 
-> **Some source subjects help adaptation, but many make it worse.**
+**Figure 1** illustrates:
+
+-   Large **domain gaps** between many source subjects and the target.\
+-   Combining all sources introduces **noise and negative transfer**.\
+-   Misaligned subjects confuse the model rather than helping it adapt.
+
+> **Many source subjects lie far from the target in feature space ---
+> hurting adaptation.**
+
+This motivates our approach:\
+⚡ Start with the most similar subjects → gradually introduce more
+challenging ones.
 
 ------------------------------------------------------------------------
 
-## 💡 Our Solution: Progressive MSDA (P-MSDA)
+## 💡 Our Proposed Method: Progressive MSDA (P-MSDA)
 
-P-MSDA learns from source subjects *in a progressive, similarity-based
-sequence*.
+Our method consists of two major components:
 
-### ✔ Subject Ranking Based on Similarity
+------------------------------------------------------------------------
 
-We compute cosine similarity between deep feature embeddings and rank
-all source subjects relative to the target.
+## 1️⃣ **Source Selection Using Similarity Ranking**
 
-### ✔ Progressive Adaptation
+We compute cosine similarity between the target subject and each source
+subject.\
+Sources are then ranked **from closest → farthest**.
 
-Adaptation begins from the most similar source, adding new subjects one
-at a time.\
-This reduces domain shift early and stabilizes learning.
+This process is illustrated in **Fig. 6** (from your paper, Fig. 3):
+
+![Figure 6 --- Closest source subject selection based on
+similarity](pmsda_fig_3.png)
+
+**Figure 6** demonstrates how the model identifies subjects with the
+most similar expression-distribution and facial structure to serve as
+the first adaptation steps.
+
+These closest subjects form the basis for our curriculum:
+
+-   Step 1 → adapt to the *closest* subject\
+-   Step 2 → adapt to the second closest\
+-   ...\
+-   Step *n* → adapt to more diverse subjects
+
+This progression greatly reduces early domain shift.
+
+------------------------------------------------------------------------
+
+## 2️⃣ **Progressive Domain Adaptation Pipeline**
+
+The complete workflow is shown in **Fig. 2**:
+
+![Figure 2 --- Progressive MSDA pipeline including replay
+memory](pmsda_fig_2.png)
+
+Key components:
+
+### ✔ Progressive Curriculum
+
+Subjects are introduced one at a time (easy → hard).
 
 ### ✔ Density-Based Replay Memory
 
-We maintain a replay buffer using DBSCAN-based density estimation to
-retain only the **most representative samples**.
+At each stage, representative samples are stored based on cluster
+density --- preventing forgetting.
 
-### ✔ Domain Alignment with MMD
+### ✔ Multi-domain Alignment
 
-We minimize discrepancy across: - Current source domain\
-- Replay memory\
-- Target domain
+Using MMD-based discrepancy loss, the model aligns:
 
-Yielding a unified, target-aligned feature space.
+-   Current source\
+-   Replay samples\
+-   Target domain
+
+This ensures stable learning at every stage.
 
 ------------------------------------------------------------------------
 
 ## 📈 Results Across Benchmark Datasets
 
-Evaluated on BioVid, UNBC-McMaster, Aff-Wild2, and BAH:
+Our approach outperforms all MSDA and UDA baselines on:
 
-### 🟦 BioVid Pain Dataset
+-   **BioVid**\
+-   **UNBC-McMaster**\
+-   **Aff-Wild2**\
+-   **BAH**
 
--   **88% accuracy**, outperforming all state-of-the-art baselines.
--   In some subjects, P-MSDA nearly matches supervised Oracle
-    performance.
+Highlights:
 
-### 🟩 UNBC-McMaster
-
--   **0.88 accuracy**, significantly higher than existing adaptation
-    methods.
-
-### 🟨 In-the-Wild (Aff-Wild2, BAH)
-
-Despite severe real-world noise:
-
--   Aff-Wild2: **0.46**
--   BAH: **0.71**
-
-Both significantly outperform MSDA baselines.
-
-### 🟥 Cross-Dataset (UNBC → BioVid)
-
--   P-MSDA achieves **0.78 accuracy**, confirming robustness under
-    extreme domain shift.
+-   **BioVid:** 88% accuracy\
+-   **UNBC-McMaster:** 0.88 accuracy\
+-   **Aff-Wild2:** 0.46\
+-   **BAH:** 0.71\
+-   **Cross-Dataset (UNBC → BioVid):** 0.78
 
 ------------------------------------------------------------------------
 
-## 🎯 Why It Works
+## 🎯 Why Progressive Learning Works
 
-Ablation studies show:
+Ablations confirm:
 
--   **Curriculum ordering** is essential.
--   **Density-based replay sampling** ensures high-quality knowledge
-    retention.
--   **Progressive alignment** yields compact, target-specific feature
-    clusters.
--   **Efficient training**: only 3 domains are used at any time.
+-   Random subject ordering performs significantly worse\
+-   Density-based replay selection boosts stability\
+-   Progressive alignment yields compact target-specific clusters\
+-   Training efficiency stays high (only 3 domains used at once)
 
 ------------------------------------------------------------------------
 
 ## ✨ Takeaway
 
-P-MSDA enables:
+P-MSDA enables robust, label-free personalization for FER systems:
 
--   Personalized FER **without labeled target data**
--   Scalable multi-subject adaptation
--   Avoidance of negative transfer
--   State-of-the-art performance across multiple datasets
-
-This is a step toward practical FER systems in healthcare, education,
-HCI, and affective computing.
+-   🚀 Personalized FER **without labeled target data**\
+-   🔄 Scalable multi-source adaptation\
+-   ❌ Avoids negative transfer\
+-   🏆 Achieves state-of-the-art results
 
 ------------------------------------------------------------------------
 
@@ -141,8 +148,10 @@ Facial Expression Recognition\
 Koerich, Eric Granger\
 **Venue:** IEEE Transactions on Affective Computing
 
+🔗 **Read the full paper here:** [IEEE Xplore Link](https://ieeexplore.ieee.org/document/11223084/media#media)
+
 ------------------------------------------------------------------------
 
 ## 📬 Contact
 
-Feel free to reach out for collaboration or questions!
+Feel free to reach out for discussion or collaboration!
