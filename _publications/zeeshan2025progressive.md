@@ -16,20 +16,20 @@ Computing***
 ## 🔍 Problem Overview
 
 Multi-source domain adaptation (MSDA) traditionally assumes using **all
-available subjects** as sources improves performance.\
+available subjects** as sources improves performance.
 
 {% include figure.liquid loading="eager" path="assets/img/publications/pmsda_fig_1.png" class="img-fluid rounded z-depth-1" %}
 
 **Figure 1 (a)** illustrates:
 
--   Large **domain gaps** between many source subjects and the target.\
--   Combining all sources introduces **noise and negative transfer**.\
+-   Large **domain gaps** between many source subjects and the target.
+-   Combining all sources introduces **noise and negative transfer**.
 -   Misaligned subjects confuse the model rather than helping it adapt.
 
 > **Many source subjects lie far from the target in feature space ---
 > hurting adaptation.**
 
-This motivates our approach **Figure 1 (b)**:\
+This motivates our approach **Figure 1 (b)**:
 ⚡ Start with the most similar subjects → gradually introduce more
 challenging ones.
 
@@ -127,7 +127,7 @@ Ablations confirm:
 
 P-MSDA enables robust, label-free personalization for FER systems:
 
--   🚀 Personalized FER **without labeled target data**\
+-   🚀 Personalized FER **without labeled target data**
 -   🔄 Scalable multi-source adaptation
 -   ❌ Avoids negative transfer
 -   🏆 Achieves state-of-the-art results
@@ -142,8 +142,8 @@ Facial Expression Recognition\
 Koerich, Eric Granger\
 **Venue:** IEEE Transactions on Affective Computing
 
-🔗 **Read the full paper here:** [IEEE Xplore Link](https://ieeexplore.ieee.org/document/11223084)
-💻 Code: https://github.com/osamazeeshan/P-MSDA
+🔗 **Read the full paper here:** [IEEE Xplore Link](https://ieeexplore.ieee.org/document/11223084)\
+💻 **Code:** [Code](https://github.com/osamazeeshan/P-MSDA)
 
 ------------------------------------------------------------------------
 
