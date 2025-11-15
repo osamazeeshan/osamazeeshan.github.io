@@ -1,12 +1,12 @@
 ---
 layout: publication
-title: Progressive Multi-Source Domain Adaptation (P-MSDA)
+title: Progressive Multi-Source Domain Adaptation for Personalized Facial Expression Recognition (P-MSDA)
 bibtex_key: zeeshan2025progressive
 ---
 
-# Bringing Personalization to Facial Expression Recognition
+## Bringing Personalization to Facial Expression Recognition
 
-### Progressive Multi-Source Domain Adaptation (P-MSDA)
+<!-- ## Progressive Multi-Source Domain Adaptation (P-MSDA) -->
 
 **Based on our publication in *IEEE Transactions on Affective
 Computing***
@@ -72,16 +72,16 @@ The complete workflow of **P-MSDA**:
 
 Key components:
 
-## ✔ Progressive Curriculum
+#### ✔ Progressive Curriculum
 
 Subjects are introduced one at a time (easy → hard).
 
-## ✔ Density-Based Replay Memory
+#### ✔ Density-Based Replay Memory
 
 At each stage, representative samples are stored based on cluster
 density --- preventing forgetting.
 
-## ✔ Multi-domain Alignment
+#### ✔ Multi-domain Alignment
 
 Using MMD-based discrepancy loss, the model aligns:
 
@@ -143,6 +143,7 @@ Koerich, Eric Granger\
 **Venue:** IEEE Transactions on Affective Computing
 
 🔗 **Read the full paper here:** [IEEE Xplore Link](https://ieeexplore.ieee.org/document/11223084)
+💻 Code: https://github.com/osamazeeshan/P-MSDA
 
 ------------------------------------------------------------------------
 
