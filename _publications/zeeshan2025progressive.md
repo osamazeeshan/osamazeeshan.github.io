@@ -143,7 +143,7 @@ Koerich, Eric Granger\
 **Venue:** IEEE Transactions on Affective Computing
 
 🔗 **Read the full paper here:** [IEEE Xplore Link](https://ieeexplore.ieee.org/document/11223084)\
-💻 **Code:** [Code](https://github.com/osamazeeshan/P-MSDA)
+💻 **Code:** [Github P-MSDA](https://github.com/osamazeeshan/P-MSDA)
 
 ------------------------------------------------------------------------
 
