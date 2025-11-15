@@ -1,12 +1,10 @@
 ---
 layout: publication
-title: Progressive Multi-Source Domain Adaptation
+title: Progressive Multi-Source Domain Adaptation (P-MSDA)
 bibtex_key: zeeshan2025progressive
 ---
 
 # Bringing Personalization to Facial Expression Recognition
-
-### Progressive Multi-Source Domain Adaptation (P-MSDA)
 
 **Based on our publication in *IEEE Transactions on Affective
 Computing***
