@@ -19,8 +19,7 @@ Multi-source domain adaptation (MSDA) traditionally assumes using **all
 available subjects** as sources improves performance.\
 However, **Fig. 1** clearly shows why this fails:
 
-![Figure 1 --- Comparison of traditional MSDA vs. Progressive
-MSDA](pmsda_fig_1.png)
+{% include figure.liquid loading="eager" path="assets/img/publications/pmsda_fig_1.png" class="img-fluid rounded z-depth-1" %}
 
 **Figure 1** illustrates:
 
@@ -51,8 +50,7 @@ Sources are then ranked **from closest → farthest**.
 
 This process is illustrated in **Fig. 6** (from your paper, Fig. 3):
 
-![Figure 6 --- Closest source subject selection based on
-similarity](pmsda_fig_3.png)
+{% include figure.liquid loading="eager" path="assets/img/publications/pmsda_fig_3.jpg" class="img-fluid rounded z-depth-1" %}
 
 **Figure 6** demonstrates how the model identifies subjects with the
 most similar expression-distribution and facial structure to serve as
@@ -73,8 +71,7 @@ This progression greatly reduces early domain shift.
 
 The complete workflow is shown in **Fig. 2**:
 
-![Figure 2 --- Progressive MSDA pipeline including replay
-memory](pmsda_fig_2.png)
+{% include figure.liquid loading="eager" path="assets/img/publications/pmsda_fig_2.png" class="img-fluid rounded z-depth-1" %}
 
 Key components:
 
@@ -148,7 +145,7 @@ Facial Expression Recognition\
 Koerich, Eric Granger\
 **Venue:** IEEE Transactions on Affective Computing
 
-🔗 **Read the full paper here:** [IEEE Xplore Link](https://ieeexplore.ieee.org/document/11223084/media#media)
+🔗 **Read the full paper here:** [IEEE Xplore Link](https://ieeexplore.ieee.org/document/11223084)
 
 ------------------------------------------------------------------------
 
