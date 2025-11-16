@@ -2,13 +2,13 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Teaching experience and courses
+description: Learning Through Teaching
 nav: true
 nav_order: 4
 ---
 
 
-## Summer School Teaching
+## Summer School
 
 ### Faculty Attestation
 
@@ -33,7 +33,19 @@ This certificate verifies my participation as a Learning Group Lead during the s
 
 I delivered a video lecture on Deep Learning, covering foundational concepts, model architectures, and practical applications. The session introduced students to core ideas in neural networks, representation learning, and modern DL pipelines, with an emphasis on real-world deployment and problem-solving.
 
-<div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <!-- Replace YOUR_VIDEO_LINK_HERE with your actual video URL --> <iframe width="100%" height="400" src="YOUR_VIDEO_LINK_HERE" title="Deep Learning Lecture" frameborder="0" allowfullscreen style="border: 1px solid #ddd; border-radius: 4px;"> </iframe> </div> </div> <a href="/assets/img/teaching/osama_lec.mp4" target="_blank" class="btn btn-sm z-depth-0" role="button"> Watch Deep Learning Lecture </a>
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    <video width="100%" height="auto" controls style="border: 1px solid #ddd; border-radius: 4px;">
+        <source src="{{ '/assets/img/teaching/osama_lec.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<a href="{{ '/assets/img/teaching/osama_lec.mp4' | relative_url }}" target="_blank"
+   class="btn btn-sm z-depth-0" role="button">
+   Watch Deep Learning Lecture
+</a>
 
 ---
 
