@@ -29,13 +29,10 @@ I was grateful to gain hands-on experience in AI and behavioural intervention, l
 <a href="{{ '/assets/img/teaching/ss_teaching_attestation.pdf' | relative_url }}" target="_blank" class="btn btn-sm z-depth-0" role="button">View Teaching Attestation PDF</a>
 
 
-##### 🎥 Guest Lecture: Deep Learning
+##### 🎥 Lecture: Deep Learning
 
-I delivered a video lecture on Deep Learning, covering foundational concepts, model architectures, and practical applications. The session introduced students to core ideas in neural networks, representation learning, and modern DL pipelines, with an emphasis on real-world deployment and problem-solving.
+Delivered a lecture on Deep Learning, covering foundational concepts, model architectures, and practical applications. The session explored essential ideas in neural networks, representation learning, and modern DL pipelines, with an emphasis on AI-enabled behavioral health interventions.
 
-
----
-##### 📸 Summer School Lecture Highlights
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
@@ -45,6 +42,9 @@ I delivered a video lecture on Deep Learning, covering foundational concepts, mo
     </video>
   </div>
 </div>
+
+
+##### 📸 Summer School Lecture Highlights
 
 <a href="{{ '/assets/img/teaching/osama_lec.mp4' | relative_url }}" target="_blank"
    class="btn btn-sm z-depth-0" role="button">
