@@ -12,8 +12,7 @@ nav_order: 4
 
 #### Faculty Attestation
 
-This certificate confirms my role as a faculty member for the 2023 Summer School graduate-level program on AI and Behavioural Health. The program, hosted by the FRQS Double Chair in Artificial Intelligence and Digital Health for Health Behaviour Change in collaboration with Concordia University and ÉTS, took place from July 3–7, 2023.
-As faculty, I contributed to delivering instructional content and supporting learning activities throughout the intensive week-long program.
+I had the opportunity to serve as a faculty member for the 2023 Summer School on AI and Behavioural Health, held from July 3–7, 2023. Hosted by the FRQS Double Chair in Artificial Intelligence and Digital Health for Health Behaviour Change in collaboration with Concordia University and ÉTS, this intensive week-long program provided a valuable learning experience while also allowing me to contribute through lecture delivery and participation in teaching activities.
 
 <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <iframe src="{{ '/assets/img/teaching/ss_faculty_attestation.pdf' | relative_url }}" width="100%" height="600px" style="border: 1px solid #ddd; border-radius: 4px;"></iframe> </div> </div>
 
@@ -22,7 +21,7 @@ As faculty, I contributed to delivering instructional content and supporting lea
 
 #### Teaching Attestation
 
-This certificate verifies my participation as a Learning Group Lead during the same 2023 Summer School on AI and Behavioural Health. In this role, I guided student groups, facilitated discussions, supported hands-on activities, and contributed to interactive learning throughout the week-long graduate-level program.
+I was grateful to gain hands-on experience in AI and behavioural intervention, learning alongside a talented group of participants during the 2023 Summer School on AI and Behavioural Health. The program highlighted how AI can support and enhance behavioural health interventions, and I was delighted to lead a motivated group throughout the week—facilitating collaboration, discussion, and shared learning.
 
 <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <iframe src="{{ '/assets/img/teaching/ss_teaching_attestation.pdf' | relative_url }}" width="100%" height="600px" style="border: 1px solid #ddd; border-radius: 4px;"></iframe> </div> </div>
 
@@ -46,16 +45,40 @@ I delivered a video lecture on Deep Learning, covering foundational concepts, mo
    Watch Deep Learning Lecture
 </a>
 
----
+<div class="row mt-3">
+  
+  <div class="col-sm-4 mt-3 mt-md-0">
+      <img src="{{ '/assets/img/teaching/summer_lec1.jpg' | relative_url }}"
+           alt="Summer School Lecture Photo 1"
+           style="width:100%; border:1px solid #ddd; border-radius:4px;">
+  </div>
 
-#### Bahria University, Islamabad
+  <div class="col-sm-4 mt-3 mt-md-0">
+      <img src="{{ '/assets/img/teaching/summer_lec2.jpg' | relative_url }}"
+           alt="Summer School Lecture Photo 2"
+           style="width:100%; border:1px solid #ddd; border-radius:4px;">
+  </div>
+
+  <div class="col-sm-4 mt-3 mt-md-0">
+      <img src="{{ '/assets/img/teaching/summer_lec3.jpg' | relative_url }}"
+           alt="Summer School Lecture Photo 3"
+           style="width:100%; border:1px solid #ddd; border-radius:4px;">
+  </div>
+
+</div>
+
+
+---
+<hr>
+
+### Bahria University, Islamabad
 
 **Lab Instructor** (2018 - 2019)
 
 - **Android Development** - Lab instructor for mobile application development course covering Android SDK, UI/UX design, activities, fragments, and app deployment
 
 
-#### Air University, Islamabad
+### Air University, Islamabad
 
 **Lab Instructor** (2014 - 2015)
 
