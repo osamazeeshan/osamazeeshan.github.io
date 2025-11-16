@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='https://www.etsmtl.ca/laboratoires/livia/equipe'>Affiliations</a>. 1100 Notre-Dame St W, Montreal, Quebec H3C 1K3.
 

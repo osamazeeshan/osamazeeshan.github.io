@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: Learning Through Teaching
+title: Knowledge Sharing
 description: Sharing what I know - some lectures and teaching activities I’ve contributed to.
 nav: true
 nav_order: 4
@@ -28,10 +28,13 @@ I was grateful to gain hands-on experience in AI and behavioural intervention, l
 
 <a href="{{ '/assets/img/teaching/ss_teaching_attestation.pdf' | relative_url }}" target="_blank" class="btn btn-sm z-depth-0" role="button">View Teaching Attestation PDF</a>
 
+
 ##### 🎥 Guest Lecture: Deep Learning
 
 I delivered a video lecture on Deep Learning, covering foundational concepts, model architectures, and practical applications. The session introduced students to core ideas in neural networks, representation learning, and modern DL pipelines, with an emphasis on real-world deployment and problem-solving.
 
+
+---
 ##### 📸 Summer School Lecture Highlights
 
 <div class="row mt-3">
