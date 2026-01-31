@@ -8,8 +8,7 @@ bibtex_key: zeeshan2025progressive
 
 <!-- ## Progressive Multi-Source Domain Adaptation (P-MSDA) -->
 
-**Based on our publication in *IEEE Transactions on Affective
-Computing**
+**Based on our publication in *IEEE Transactions on Affective Computing**
 
 ------------------------------------------------------------------------
 

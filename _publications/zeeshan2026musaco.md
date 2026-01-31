@@ -1,5 +1,5 @@
 ---
 layout: publication
-title: MuSACo: Multimodal Subject-Specific Selection and Adaptation for Expression Recognition with Co-Training
+title: Progressive Multi-Source Domain Adaptation for Personalized Facial Expression Recognition (P-MSDA)
 bibtex_key: zeeshan2026musaco
 ---
