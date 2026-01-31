@@ -1,7 +1,7 @@
 ---
 layout: publication
-title: MuSACO: Multimodal Subject-Specific Selection and Adaptation for Expression Recognition with Co-Training
-bibtex_key: zeeshan2025musaco
+title: MuSACo: Multimodal Subject-Specific Selection and Adaptation for Expression Recognition with Co-Training
+bibtex_key: zeeshan2026musaco
 ---
 
 ## Leveraging Multimodality for Personalized Expression Recognition
@@ -26,7 +26,7 @@ bibtex_key: zeeshan2025musaco
 
 ---
 
-## 💡 Our Proposed Method: MuSACO
+<!-- ## 💡 Our Proposed Method: MuSACO
 
 [cite_start]We introduce **MuSACO**, a Multimodal Subject-Specific Selection and Adaptation method based on Co-Training[cite: 12]. [cite_start]It leverages complementary information across modalities (e.g., visual and physiological) and selects relevant source subjects for adaptation[cite: 13].
 
@@ -107,4 +107,4 @@ To improve generalization:
 
 ## 📬 Contact
 
-For questions regarding the implementation or methodology, please contact the authors at ÉTS Montreal or Inria.
+For questions regarding the implementation or methodology, please contact the authors at ÉTS Montreal or Inria. -->
