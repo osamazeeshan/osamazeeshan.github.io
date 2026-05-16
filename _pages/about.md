@@ -2,6 +2,8 @@
 layout: about
 title: About
 permalink: /
+description: Computer Vision Scientist, Machine Learning Researcher, and Applied Scientist working on personalized computer vision, multimodal learning, domain adaptation, VLMs, LLMs, and robust visual understanding in Montreal, Canada.
+keywords: Computer Vision Scientist, Machine Learning Researcher, Applied Scientist, Computer Vision Researcher, Multimodal Learning, Domain Adaptation, Personalized Computer Vision, VLMs, LLMs, Deep Learning, Montreal, Canada
 subtitle: <a href='https://www.etsmtl.ca/laboratoires/livia/equipe'>Affiliations</a>. 1100 Notre-Dame St W, Montreal, Quebec H3C 1K3.
 
 profile:
@@ -23,7 +25,7 @@ social: true # includes social icons at the bottom of the page
 
 <strong>Open to work and consultancy opportunities</strong> in machine learning, computer vision research, and applied scientist roles.
 
-I am a <em>developer, consultant, ML researcher, and doctoral candidate</em> with several years of experience across industry and research. My work focuses on real-time, robust computer vision systems that combine deep learning, domain adaptation, and multimodal learning to extract, localize, and recognize patterns in visual data.
+I am a <em>developer, consultant, ML researcher, and doctoral candidate</em> based in Montreal, Canada, with several years of experience across industry and research. My work focuses on real-time, robust computer vision systems that combine deep learning, domain adaptation, multimodal learning, VLMs, and LLMs to extract, localize, and recognize patterns in visual data.
 
 🌱 I am currently pursuing a Ph.D. on <em>Adaptation of Deep Learning Models for Video-Based Expression Recognition</em> under the supervision of <a href='https://www.etsmtl.ca/etudier-a-lets/corps-enseignant/egranger'>Prof. Eric Granger</a> and <a href='https://www.etsmtl.ca/etudier-a-lets/corps-enseignant/mpedersoli'>Prof. Marco Pedersoli</a>.
 

@@ -8,8 +8,10 @@ middle_name: Osama
 last_name: Zeeshan
 email: osamaz.oz31@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
+  Computer Vision Scientist, Machine Learning Researcher, and Applied Scientist working on personalized computer vision,
+  multimodal learning, domain adaptation, VLMs, LLMs, and robust visual understanding in Montreal, Canada.
 footer_text: >
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: Computer Vision Scientist, Machine Learning Researcher, Applied Scientist, Computer Vision Researcher, Multimodal Learning, Domain Adaptation, Personalized Computer Vision, VLMs, LLMs, Deep Learning, Montreal, Canada
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌔 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -110,6 +112,7 @@ wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.
 # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
 google_analytics: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
 cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
+goatcounter_code: # your GoatCounter site code, e.g. osamazeeshan for https://osamazeeshan.goatcounter.com/count
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)
@@ -371,6 +374,7 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 
 enable_google_analytics: false # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
+enable_goatcounter_analytics: false # enables privacy-friendly GoatCounter analytics
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
