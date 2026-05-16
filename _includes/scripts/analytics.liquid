@@ -29,4 +29,28 @@
     async
     src="//gc.zgo.at/count.js"
   ></script>
+  {% if site.enable_visitor_counter %}
+    <script>
+      window.addEventListener('load', function () {
+        var counter = document.getElementById('visitor-counter');
+        var value = document.getElementById('visitor-counter-value');
+
+        if (!counter || !value) return;
+
+        fetch('https://{{ site.goatcounter_code }}.goatcounter.com/counter/TOTAL.json', { credentials: 'omit' })
+          .then(function (response) {
+            if (!response.ok) throw new Error('Visitor counter is not enabled');
+            return response.json();
+          })
+          .then(function (data) {
+            if (!data.count) return;
+            value.textContent = data.count;
+            counter.hidden = false;
+          })
+          .catch(function () {
+            counter.hidden = true;
+          });
+      });
+    </script>
+  {% endif %}
 {% endif %}
