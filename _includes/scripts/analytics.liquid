@@ -37,6 +37,8 @@
 
         if (!counter || !value) return;
 
+        counter.hidden = false;
+
         fetch('https://{{ site.goatcounter_code }}.goatcounter.com/counter/TOTAL.json', { credentials: 'omit' })
           .then(function (response) {
             if (!response.ok) throw new Error('Visitor counter is not enabled');
@@ -48,7 +50,7 @@
             counter.hidden = false;
           })
           .catch(function () {
-            counter.hidden = true;
+            value.textContent = 'unavailable';
           });
       });
     </script>
