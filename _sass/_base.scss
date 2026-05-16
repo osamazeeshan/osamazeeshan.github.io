@@ -479,15 +479,25 @@ footer {
   }
 
   .visitor-counter {
+    background: var(--global-footer-bg-color);
     border: 1px solid rgba(255, 255, 255, 0.28);
     border-radius: 999px;
+    bottom: 0.45rem;
+    box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.16);
     color: var(--global-footer-text-color);
     display: inline-flex;
     flex: 0 0 auto;
     font-size: 0.72rem;
     line-height: 1;
     padding: 0.28rem 0.55rem;
+    position: fixed;
+    right: 0.75rem;
+    z-index: 1040;
     white-space: nowrap;
+  }
+
+  .visitor-counter[hidden] {
+    display: none;
   }
 }
 
@@ -503,6 +513,12 @@ html[data-theme="light"] footer .visitor-counter {
   footer .footer-content {
     flex-direction: column;
     gap: 0.35rem;
+  }
+
+  footer .visitor-counter {
+    bottom: 0.35rem;
+    font-size: 0.68rem;
+    right: 0.5rem;
   }
 }
 
