@@ -40,6 +40,12 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Featured work -->
+    {% if page.featured_work %}
+      <h2>featured work</h2>
+      {% include featured_work.liquid %}
+    {% endif %}
+
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
