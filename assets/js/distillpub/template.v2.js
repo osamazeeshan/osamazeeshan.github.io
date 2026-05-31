@@ -1373,19 +1373,10 @@ ${math}
   // limitations under the License.
 
   function addPolyfill(polyfill, polyfillLoadedCallback) {
-    console.debug("Runlevel 0: Polyfill required: " + polyfill.name);
-    const script = document.createElement("script");
-    script.src = polyfill.url;
-    script.async = false;
+    console.warn("Runlevel 0: Remote polyfill loading is disabled: " + polyfill.name);
     if (polyfillLoadedCallback) {
-      script.onload = function () {
-        polyfillLoadedCallback(polyfill);
-      };
+      polyfillLoadedCallback(polyfill);
     }
-    script.onerror = function () {
-      new Error("Runlevel 0: Polyfills failed to load script " + polyfill.name);
-    };
-    document.head.appendChild(script);
   }
 
   const polyfills = [
@@ -1401,14 +1392,14 @@ ${math}
           "from" in Array
         );
       },
-      url: "https://distill.pub/third-party/polyfills/webcomponents-lite.js",
+      url: null,
     },
     {
       name: "IntersectionObserver",
       support: function () {
         return "IntersectionObserver" in window && "IntersectionObserverEntry" in window;
       },
-      url: "https://distill.pub/third-party/polyfills/intersection-observer.js",
+      url: null,
     },
   ];
 
@@ -9597,8 +9588,9 @@ distill-header .nav a {
     window.distill.runlevel += 1;
     window.distill.initialize();
   } else {
-    console.debug("Runlevel 0: Distill Template is loading polyfills.");
-    Polyfills.load(window.distill.initialize);
+    console.warn("Runlevel 0: Required Distill browser features are missing; skipping remote polyfill loading.");
+    console.debug("Runlevel 0->1.");
+    window.distill.runlevel += 1;
+    window.distill.initialize();
   }
 });
-//# sourceMappingURL=template.v2.js.map
