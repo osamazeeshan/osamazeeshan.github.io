@@ -22,12 +22,14 @@ Blood Care is an Android app designed to connect users with blood donors, health
 </div>
 
 ### Signup Flow
+
 - Name, Password, Contact, Email
 - Blood Group, Age/DOB
 - Location (City/State), Gender, Profile Picture
 - Validation via Contact & Email
 
 ### Core Features
+
 - Request blood groups
 - Donate blood groups
 - Search doctors, hospitals, and centers
@@ -36,6 +38,7 @@ Blood Care is an Android app designed to connect users with blood donors, health
 - Contact donors and view live locations
 
 ### Technical Features
+
 - Real-time location tracking
 - Emergency alert system
 - Health tips and event management
@@ -43,13 +46,15 @@ Blood Care is an Android app designed to connect users with blood donors, health
 - Data encryption and privacy protection
 
 ### Technologies Used
+
 - Android Development
 - Firebase
 - Google Maps API
 - Real-time Database
 - Location Services
 - Push Notifications
-- Material Design 
+- Material Design
 
 ### Project Links
-- [GitHub Repository](https://github.com/osamazeeshan/BloodCare) 
+
+- [GitHub Repository](https://github.com/osamazeeshan/BloodCare)

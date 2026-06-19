@@ -23,18 +23,21 @@ Pioneered unsupervised classification of human sperm cells using k-means cluster
 </div>
 
 ### Unsupervised Classification System
+
 - Implemented k-means clustering for sperm cell classification (Head and Tail)
 - Developed morphological analysis algorithms
 - Created feature extraction pipeline for cell characteristics
 - Built automated classification system
 
 ### Computer-Aided Sperm Analysis (CASA)
+
 - Developed real-time processing system
 - Implemented automated motility analysis
 - Created morphology assessment algorithms
 - Built clinical diagnostic interface
 
 ### Technologies Used
+
 - C#
 - Unsupervised Learning
 - Computer Vision
