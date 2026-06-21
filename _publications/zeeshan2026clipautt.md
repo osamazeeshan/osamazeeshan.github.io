@@ -371,7 +371,7 @@ bibtex_key: zeeshan2026clipautt
 
 <div class="clip-autt-page">
   <section class="clip-hero">
-    <img class="clip-logo" src="{{ '/assets/img/publications/clip-autt-logo.png' | relative_url }}" alt="CLIP-AUTT action unit prompting logo">
+    <!-- <img class="clip-logo" src="{{ '/assets/img/publications/clip-autt-logo.png' | relative_url }}" alt="CLIP-AUTT action unit prompting logo"> -->
     <div class="clip-kicker">ECCV 2026 · Fine-Grained Video Emotion Recognition</div>
     <img class="clip-logo" src="{{ '/assets/img/publications/clip-autt-logo.png' | relative_url }}" alt="CLIP-AUTT action unit prompting logo">
     <h1 class="clip-title">CLIP-AUTT</h1>
