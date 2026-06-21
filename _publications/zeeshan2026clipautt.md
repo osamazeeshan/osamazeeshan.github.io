@@ -50,6 +50,22 @@ bibtex_key: zeeshan2026clipautt
     z-index: 1;
   }
 
+
+  .clip-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.65rem, 2vw, 1.1rem);
+    width: fit-content;
+    margin: 0.35rem auto 0;
+  }
+
+  .clip-logo {
+    flex: 0 0 auto;
+    width: clamp(3rem, 8vw, 5rem);
+    height: auto;
+  }
+
   .clip-kicker {
     display: inline-flex;
     align-items: center;
@@ -69,10 +85,10 @@ bibtex_key: zeeshan2026clipautt
   .clip-title {
     margin: 0;
     color: var(--clip-navy);
-    font-size: clamp(3rem, 10vw, 6.25rem);
+    font-size: clamp(2.3rem, 6.5vw, 4.4rem);
     font-weight: 900;
     letter-spacing: -0.08em;
-    line-height: 0.9;
+    line-height: 0.95;
   }
 
   .clip-subtitle {
@@ -340,7 +356,10 @@ bibtex_key: zeeshan2026clipautt
 <div class="clip-autt-page">
   <section class="clip-hero">
     <div class="clip-kicker">ECCV 2026 · Fine-Grained Video Emotion Recognition</div>
-    <h1 class="clip-title">CLIP-AUTT</h1>
+    <div class="clip-brand">
+      <img class="clip-logo" src="{{ '/assets/img/publications/clip-autt-logo.png' | relative_url }}" alt="CLIP-AUTT action unit prompting logo">
+      <h1 class="clip-title">CLIP-AUTT</h1>
+    </div>
     <p class="clip-subtitle">Test-Time Personalization with Action Unit Prompting for Fine-Grained Video Emotion Recognition</p>
     <p class="clip-authors">
       <strong>Muhammad Osama Zeeshan</strong> · Masoumeh Sharafi · Benoît Savary · Alessandro Lameiras Koerich · Marco Pedersoli · Eric Granger
