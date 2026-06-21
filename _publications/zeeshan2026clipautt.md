@@ -10,7 +10,7 @@ bibtex_key: zeeshan2026clipautt
   <p class="lead mt-3">
     Muhammad Osama Zeeshan · Masoumeh Sharafi · Benoît Savary · Alessandro Lameiras Koerich · Marco Pedersoli · Eric Granger
   </p>
-  <p class="h5"><strong>ECCV 2026: The 19th European Conference on Computer Vision, Malmö, Sweden</strong></p>
+  <p class="h5"><strong>In ECCV 2026: The 19th European Conference on Computer Vision, Malmö, Sweden</strong></p>
   <p class="mt-3">
     <a class="btn btn-sm z-depth-0" href="https://arxiv.org/pdf/2603.27999" role="button">PDF</a>
     <a class="btn btn-sm z-depth-0" href="#citation" role="button">Citation</a>
@@ -59,7 +59,7 @@ CLIP-AUTT shows that AU-based prompt personalization can make CLIP-style video e
 
 **Authors:** Muhammad Osama Zeeshan, Masoumeh Sharafi, Benoît Savary, Alessandro Lameiras Koerich, Marco Pedersoli, Eric Granger
 
-**Venue:** ECCV 2026: The 19th European Conference on Computer Vision, Malmö, Sweden
+**Venue:** In ECCV 2026: The 19th European Conference on Computer Vision, Malmö, Sweden
 
 🔗 **Read the paper:** [PDF](https://arxiv.org/pdf/2603.27999)
 
@@ -71,7 +71,7 @@ CLIP-AUTT shows that AU-based prompt personalization can make CLIP-style video e
 @inproceedings{zeeshan2026clipautt,
   title={CLIP-AUTT: Test-Time Personalization with Action Unit Prompting for Fine-Grained Video Emotion Recognition},
   author={Zeeshan, Muhammad Osama and Sharafi, Masoumeh and Savary, Beno{\^i}t and Koerich, Alessandro Lameiras and Pedersoli, Marco and Granger, Eric},
-  booktitle={ECCV 2026: The 19th European Conference on Computer Vision, Malmö, Sweden},
+  booktitle={In ECCV 2026: The 19th European Conference on Computer Vision, Malmö, Sweden},
   year={2026}
 }
 ```
