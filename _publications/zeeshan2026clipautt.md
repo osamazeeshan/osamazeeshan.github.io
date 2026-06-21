@@ -494,7 +494,7 @@ bibtex_key: zeeshan2026clipautt
       The right side of Fig. 4 qualitatively compares top activated AUs from CLIP-AU and CLIP-AUTT against AU activations estimated by OpenFace. The adapted CLIP-AUTT prompts better align with subject-specific eye and mouth movements, producing more meaningful AU combinations for the target subject.
     </p>
     <div class="clip-figure-card">
-      <img src="{{ '/assets/img/publications/clip-autt-au-visualization.svg' | relative_url }}" alt="Qualitative AU visualization inspired by the right side of Fig. 4">
+      <img src="{{ '/assets/img/publications/clip-autt-au-visualization.png' | relative_url }}" alt="Qualitative AU visualization inspired by the right side of Fig. 4">
       <p class="clip-caption">Visualization inspired by Fig. 4 right: CLIP-AUTT refines generic AU semantics into more subject-specific AU activation patterns.</p>
     </div>
   </section>
