@@ -2,6 +2,7 @@
 layout: publication
 title: CLIP-AUTT: Test-Time Personalization with Action Unit Prompting for Fine-Grained Video Emotion Recognition
 bibtex_key: zeeshan2026clipautt
+favicon: publications/clip-autt-logo.png
 ---
 
 <style>
