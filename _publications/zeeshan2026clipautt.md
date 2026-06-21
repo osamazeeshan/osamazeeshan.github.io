@@ -27,23 +27,11 @@ favicon: publications/clip-autt-logo.png
     overflow: hidden;
     margin: 1rem clamp(1rem, 5vw, 4rem) 1.5rem;
     padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 3vw, 2.25rem);
-    border: 1px solid var(--clip-border);
+    border: 1px solid rgba(17, 24, 39, 0.10);
     border-radius: 2rem;
-    background:
-      radial-gradient(circle at 15% 20%, rgba(6, 182, 212, 0.24), transparent 34%),
-      radial-gradient(circle at 85% 12%, rgba(124, 58, 237, 0.20), transparent 30%),
-      linear-gradient(135deg, #f8fbff 0%, #eef6ff 48%, #f8f5ff 100%);
-    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+    background: #fff;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
     text-align: center;
-  }
-
-  .clip-hero::after {
-    content: "";
-    position: absolute;
-    inset: auto -12% -35% -12%;
-    height: 55%;
-    background: linear-gradient(90deg, rgba(37, 99, 235, 0.10), rgba(6, 182, 212, 0.16), rgba(124, 58, 237, 0.10));
-    filter: blur(28px);
   }
 
   .clip-hero > * {
