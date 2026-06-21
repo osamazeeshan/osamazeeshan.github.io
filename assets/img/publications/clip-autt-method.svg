@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">CLIP-AUTT method</title>
+  <desc id="desc">Compact diagram for CLIP-AUTT with temporal window selection and test-time AU prompt personalization.</desc>
+  <defs><linearGradient id="b" x1="0" x2="1"><stop stop-color="#f8fbff"/><stop offset="1" stop-color="#ecfeff"/></linearGradient><linearGradient id="p" x1="0" x2="1"><stop stop-color="#7c3aed"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+  <rect width="720" height="420" rx="26" fill="url(#b)"/>
+  <text x="38" y="52" font-family="Inter,Arial" font-size="26" font-weight="850" fill="#111827">CLIP-AUTT</text>
+  <text x="38" y="80" font-family="Inter,Arial" font-size="14" fill="#667085">Test-time AU prompt personalization for each target subject</text>
+  <g transform="translate(38 125)">
+    <rect width="160" height="122" rx="18" fill="#fff" stroke="#dbeafe"/><text x="80" y="32" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="800" fill="#111827">target video</text><rect x="26" y="54" width="28" height="42" rx="7" fill="#c4b5fd"/><rect x="66" y="48" width="28" height="54" rx="7" fill="#93c5fd"/><rect x="106" y="58" width="28" height="38" rx="7" fill="#67e8f9"/>
+  </g>
+  <path d="M220 186 H280" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/><path d="M280 186 l-14 -10 v20z" fill="#94a3b8"/>
+  <g transform="translate(300 125)">
+    <rect width="154" height="122" rx="18" fill="#fff" stroke="#dbeafe"/><text x="77" y="34" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="800" fill="#111827">entropy window</text><path d="M32 82 C50 42 74 112 96 70 S130 58 132 42" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/><circle cx="96" cy="70" r="10" fill="#06b6d4"/>
+  </g>
+  <path d="M476 186 H536" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/><path d="M536 186 l-14 -10 v20z" fill="#94a3b8"/>
+  <g transform="translate(556 125)">
+    <rect width="126" height="122" rx="18" fill="url(#p)"/><text x="63" y="39" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="850" fill="#fff">Prompt</text><text x="63" y="65" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="850" fill="#fff">tuning</text><text x="63" y="95" text-anchor="middle" font-family="Inter,Arial" font-size="14" fill="#e0f2fe">personalized</text>
+  </g>
+  <g transform="translate(92 300)"><rect width="536" height="48" rx="24" fill="#fff" stroke="#dbeafe"/><text x="268" y="31" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="750" fill="#334155">Adapts AU prompts at inference while keeping the backbone frozen</text></g>
+</svg>
