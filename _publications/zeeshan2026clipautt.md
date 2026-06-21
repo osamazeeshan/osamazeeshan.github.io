@@ -414,10 +414,10 @@ bibtex_key: zeeshan2026clipautt
   <section class="clip-section" id="abstract">
     <h2>Abstract</h2>
     <p>
-      Fine-grained video emotion recognition requires sensitivity to subtle facial dynamics that differ strongly across people. CLIP-AUTT addresses this challenge by combining CLIP-style vision-language representations with structured facial Action Unit semantics and test-time adaptation for unseen subjects.
+      Personalization in emotion recognition (ER) is essential for an accurate interpretation of subtle and subject-specific expressive patterns. Recent advances in vision–language models (VLMs) such as CLIP demonstrate strong potential for leveraging joint image–text representations in ER. However, CLIP-based methods either depend on CLIP’s contrastive pretraining or on LLMs to generate descriptive text prompts, which are noisy, computationally expensive, and fail to capture fine-grained expressions, leading to degraded performance. In this work, we leverage Action Units (AUs) as structured textual prompts within CLIP to model fine-grained facial expressions. AUs encode the subtle muscle activations underlying expressions, providing localized and interpretable semantic cues for more robust ER.
     </p>
     <p>
-      Instead of depending on noisy generated text prompts or expensive language-model supervision, CLIP-AUTT uses Action Units as interpretable prompts for localized facial muscle activations. The framework first learns subject-agnostic temporal emotion cues with CLIP-AU, then adapts AU prompts during inference to personalize predictions for each target video while maintaining temporal consistency.
+      We introduce CLIP-AU, a lightweight AU–guided temporal learning method that integrates interpretable AU semantics into CLIP. It learns generic, subject-agnostic representations by aligning AU prompts with facial dynamics, enabling fine-grained ER without CLIP fine-tuning or LLM-generated text supervision. Although CLIP-AU models fine-grained AU semantics, it does not adapt to subject-specific variability in subtle expressions. To address this limitation, we propose CLIP-AUTT, a video-based test-time personalization method that dynamically adapts AU prompts to videos from unseen subjects. By combining entropy-guided temporal window selection with prompt tuning, CLIP-AUTT enables subject-specific adaptation while preserving temporal consistency. Our extensive experiments on three challenging video-based subtle ER datasets — BioVid, StressID, and BAH — indicate that CLIP-AU and CLIP-AUTT outperform state-of-the-art CLIP-based FER and TTA methods, achieving robust and personalized subtle ER.
     </p>
   </section>
 
@@ -461,7 +461,7 @@ bibtex_key: zeeshan2026clipautt
   </section>
 
   <section class="clip-section" id="results">
-    <h2>Results: comparison with CLIP-based FER and TTA</h2>
+    <h2>Results: Comparison with CLIP-based FER and TTA Methods</h2>
     <p>
       Table 1 reports averaged results over 10 target subjects per dataset. CLIP-AU improves the fine-tuning setting with AU-guided temporal alignment, while CLIP-AUTT provides the strongest test-time adaptation results across BioVid, StressID, and BAH.
     </p>
@@ -490,7 +490,7 @@ bibtex_key: zeeshan2026clipautt
   </section>
 
   <section class="clip-section" id="visualization">
-    <h2>Visualization: personalized AU alignment</h2>
+    <h2>Visualization: Personalized AU alignment</h2>
     <p>
       The right side of Fig. 4 qualitatively compares top activated AUs from CLIP-AU and CLIP-AUTT against AU activations estimated by OpenFace. The adapted CLIP-AUTT prompts better align with subject-specific eye and mouth movements, producing more meaningful AU combinations for the target subject.
     </p>
