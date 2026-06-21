@@ -373,7 +373,7 @@ bibtex_key: zeeshan2026clipautt
 
 <div class="clip-autt-page">
   <section class="clip-hero">
-    <img class="clip-logo" src="{{ '/assets/img/publications/clip-autt-logo.svg' | relative_url }}" alt="CLIP-AUTT action unit prompting logo">
+    <img class="clip-logo" src="{{ '/assets/img/publications/clip-autt-logo.png' | relative_url }}" alt="CLIP-AUTT action unit prompting logo">
     <div class="clip-kicker">ECCV 2026 · Fine-Grained Video Emotion Recognition</div>
     <h1 class="clip-title">CLIP-AUTT</h1>
     <p class="clip-subtitle">Test-Time Personalization with Action Unit Prompting for Fine-Grained Video Emotion Recognition</p>
@@ -416,11 +416,11 @@ bibtex_key: zeeshan2026clipautt
     <h2>Method</h2>
     <div class="clip-method-figures">
       <div class="clip-figure-card">
-        <img src="{{ '/assets/img/publications/clip-au-method.svg' | relative_url }}" alt="Compact CLIP-AU method diagram">
+        <img src="{{ '/assets/img/publications/CLIP-AU.png' | relative_url }}" alt="Compact CLIP-AU method diagram">
         <p class="clip-caption">CLIP-AU learns AU-guided temporal emotion cues with structured Action Unit prompts.</p>
       </div>
       <div class="clip-figure-card">
-        <img src="{{ '/assets/img/publications/clip-autt-method.svg' | relative_url }}" alt="Compact CLIP-AUTT method diagram">
+        <img src="{{ '/assets/img/publications/CLIP-AUTT.png' | relative_url }}" alt="Compact CLIP-AUTT method diagram">
         <p class="clip-caption">CLIP-AUTT adds entropy-guided temporal window selection and test-time AU prompt personalization.</p>
       </div>
     </div>
