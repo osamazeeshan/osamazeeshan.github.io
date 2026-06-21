@@ -177,7 +177,12 @@ bibtex_key: zeeshan2026clipautt
   }
 
   .clip-section {
-    margin: 2.5rem 0;
+    margin: 2.5rem clamp(0.75rem, 3vw, 2.5rem);
+    padding: clamp(1.2rem, 3vw, 2rem);
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    border-radius: 1.75rem;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 18px 44px rgba(15, 23, 42, 0.07);
   }
 
   .clip-section h2 {
@@ -275,6 +280,51 @@ bibtex_key: zeeshan2026clipautt
     white-space: pre-wrap;
   }
 
+  .clip-table-wrap {
+    overflow-x: auto;
+    margin-top: 1rem;
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    border-radius: 1rem;
+    background: #fff;
+  }
+
+  .clip-results-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 760px;
+    font-size: 0.9rem;
+  }
+
+  .clip-results-table th,
+  .clip-results-table td {
+    padding: 0.7rem 0.75rem;
+    border-bottom: 1px solid #eef2f7;
+    text-align: center;
+  }
+
+  .clip-results-table th {
+    background: #f8fbff;
+    color: #1f2937;
+    font-weight: 850;
+  }
+
+  .clip-results-table td:nth-child(2),
+  .clip-results-table th:nth-child(2) {
+    text-align: left;
+  }
+
+  .clip-results-table .clip-highlight td {
+    background: #eef6ff;
+    color: #111827;
+    font-weight: 850;
+  }
+
+  .clip-results-table .clip-best td {
+    background: #ecfeff;
+    color: #0f172a;
+    font-weight: 900;
+  }
+
   @media (max-width: 768px) {
     .clip-card-grid {
       grid-template-columns: 1fr;
@@ -310,17 +360,12 @@ bibtex_key: zeeshan2026clipautt
   <nav class="clip-nav" aria-label="CLIP-AUTT page sections">
     <a href="#abstract">Abstract</a>
     <a href="#method">Method</a>
+    <a href="#efficiency">Efficiency</a>
     <a href="#results">Results</a>
+    <a href="#visualization">Visualization</a>
     <a href="#takeaways">Takeaways</a>
     <a href="#citation">Citation</a>
   </nav>
-
-  <section class="clip-section" id="overview">
-    <div class="clip-figure-card">
-      <img src="{{ '/assets/img/publications/CLIP-AUTT.png' | relative_url }}" alt="CLIP-AUTT method overview">
-      <p class="clip-caption">CLIP-AUTT personalizes vision-language emotion recognition at test time with Action Unit prompts and temporal video cues.</p>
-    </div>
-  </section>
 
   <section class="clip-section" id="abstract">
     <h2>Abstract</h2>
@@ -334,6 +379,10 @@ bibtex_key: zeeshan2026clipautt
 
   <section class="clip-section" id="method">
     <h2>Method</h2>
+    <div class="clip-figure-card">
+      <img src="{{ '/assets/img/publications/CLIP-AUTT.png' | relative_url }}" alt="CLIP-AUTT method overview">
+      <p class="clip-caption">Method overview: CLIP-AUTT selects confident temporal windows and adapts Action Unit prompts for subject-specific video emotion recognition.</p>
+    </div>
     <div class="clip-card-grid">
       <article class="clip-card">
         <h3>1. AU-guided prompting</h3>
@@ -350,19 +399,55 @@ bibtex_key: zeeshan2026clipautt
     </div>
   </section>
 
+  <section class="clip-section" id="efficiency">
+    <h2>Efficiency analysis</h2>
+    <p>
+      Following the efficiency view in Fig. 1(d) of the paper, CLIP-AUTT is designed to improve recognition while keeping adaptation lightweight: CLIP remains frozen, only AU prompt representations are tuned at test time, and the temporal window selector focuses computation on the most expressive segment.
+    </p>
+    <div class="clip-figure-card">
+      <img src="{{ '/assets/img/publications/clip-autt-efficiency.svg' | relative_url }}" alt="Efficiency analysis inspired by Fig. 1(d)">
+      <p class="clip-caption">Efficiency summary inspired by Fig. 1(d): CLIP-AUTT targets the favorable region of high WAR and high throughput with small trainable adaptation overhead.</p>
+    </div>
+  </section>
+
   <section class="clip-section" id="results">
-    <h2>Evaluation</h2>
+    <h2>Results: comparison with CLIP-based FER and TTA</h2>
     <p>
-      CLIP-AU and CLIP-AUTT are evaluated on challenging video-based subtle emotion recognition benchmarks where target subjects can show highly individualized expressive patterns.
+      Table 1 reports averaged results over 10 target subjects per dataset. CLIP-AU improves the fine-tuning setting with AU-guided temporal alignment, while CLIP-AUTT provides the strongest test-time adaptation results across BioVid, StressID, and BAH.
     </p>
-    <ul class="clip-pill-list">
-      <li>BioVid · Pain expression analysis</li>
-      <li>StressID · Stress recognition</li>
-      <li>BAH · Ambivalence and hesitancy recognition</li>
-    </ul>
+    <div class="clip-table-wrap">
+      <table class="clip-results-table">
+        <thead>
+          <tr><th>Setting</th><th>Method</th><th>BioVid WAR</th><th>BioVid F1</th><th>StressID WAR</th><th>StressID F1</th><th>BAH WAR</th><th>BAH F1</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ZS</td><td>CLIP-ViT-B/32 (ICML’21)</td><td>50.0</td><td>33.3</td><td>60.4</td><td>34.8</td><td>39.5</td><td>28.1</td></tr>
+          <tr><td>FT</td><td>CLIP-ViT-B/32 (ICML’21)</td><td>69.7</td><td>66.6</td><td>67.0</td><td>44.5</td><td>60.4</td><td>39.8</td></tr>
+          <tr><td>FT</td><td>EmoCLIP (FG’24)</td><td>67.7</td><td>63.4</td><td>63.5</td><td>35.9</td><td>56.2</td><td>36.5</td></tr>
+          <tr><td>FT</td><td>X-CLIP (ECCV’22)</td><td>70.9</td><td>57.9</td><td>62.3</td><td>41.3</td><td>63.0</td><td>39.2</td></tr>
+          <tr><td>FT</td><td>Exp-CLIP (WACV’25)</td><td>70.2</td><td>66.7</td><td>63.1</td><td>44.5</td><td>62.2</td><td>38.5</td></tr>
+          <tr class="clip-highlight"><td>FT</td><td>CLIP-AU</td><td>78.0</td><td>74.8</td><td>66.5</td><td>58.5</td><td>68.3</td><td>40.3</td></tr>
+          <tr><td>TTA</td><td>TPT (NeurIPS’22)</td><td>71.1</td><td>67.5</td><td>70.9</td><td>57.9</td><td>65.6</td><td>39.7</td></tr>
+          <tr><td>TTA</td><td>TDA (CVPR’24)</td><td>71.4</td><td>68.2</td><td>69.7</td><td>49.9</td><td>65.2</td><td>39.9</td></tr>
+          <tr><td>TTA</td><td>DPE (NeurIPS’24)</td><td>73.1</td><td>69.6</td><td>71.3</td><td>54.2</td><td>66.7</td><td>39.4</td></tr>
+          <tr><td>TTA</td><td>PromptAlign (NeurIPS’23)</td><td>75.3</td><td>71.6</td><td>74.6</td><td>53.2</td><td>67.1</td><td>39.7</td></tr>
+          <tr><td>TTA</td><td>ReTA (ACMMM’25)</td><td>75.1</td><td>71.3</td><td>71.8</td><td>52.8</td><td>67.6</td><td>39.8</td></tr>
+          <tr><td>TTA</td><td>T3AL (CVPR’24)</td><td>76.1</td><td>72.9</td><td>75.9</td><td>59.4</td><td>67.9</td><td>40.7</td></tr>
+          <tr class="clip-best"><td>TTA</td><td>CLIP-AUTT</td><td>81.5</td><td>78.0</td><td>80.8</td><td>77.9</td><td>69.8</td><td>41.1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="clip-section" id="visualization">
+    <h2>Visualization: personalized AU alignment</h2>
     <p>
-      Across these settings, AU-based prompting and test-time personalization improve robustness compared with state-of-the-art CLIP-based facial expression recognition and test-time adaptation methods.
+      The right side of Fig. 4 qualitatively compares top activated AUs from CLIP-AU and CLIP-AUTT against AU activations estimated by OpenFace. The adapted CLIP-AUTT prompts better align with subject-specific eye and mouth movements, producing more meaningful AU combinations for the target subject.
     </p>
+    <div class="clip-figure-card">
+      <img src="{{ '/assets/img/publications/clip-autt-au-visualization.svg' | relative_url }}" alt="Qualitative AU visualization inspired by the right side of Fig. 4">
+      <p class="clip-caption">Visualization inspired by Fig. 4 right: CLIP-AUTT refines generic AU semantics into more subject-specific AU activation patterns.</p>
+    </div>
   </section>
 
   <section class="clip-section" id="takeaways">
