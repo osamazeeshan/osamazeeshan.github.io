@@ -27,10 +27,7 @@ favicon: publications/clip-autt-logo.png
     overflow: hidden;
     margin: 1rem clamp(1rem, 5vw, 4rem) 1.5rem;
     padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 3vw, 2.25rem);
-    border: 1px solid rgba(17, 24, 39, 0.10);
-    border-radius: 2rem;
-    background: #fff;
-    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    background: transparent;
     text-align: center;
   }
 
