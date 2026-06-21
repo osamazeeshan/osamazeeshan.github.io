@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">CLIP-AU method</title>
+  <desc id="desc">Compact diagram for CLIP-AU with video frames, AU prompts, temporal modeling, and emotion prediction.</desc>
+  <defs><linearGradient id="b" x1="0" x2="1"><stop stop-color="#eef6ff"/><stop offset="1" stop-color="#f8f5ff"/></linearGradient><linearGradient id="p" x1="0" x2="1"><stop stop-color="#2563eb"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+  <rect width="720" height="420" rx="26" fill="url(#b)"/>
+  <text x="38" y="52" font-family="Inter,Arial" font-size="26" font-weight="850" fill="#111827">CLIP-AU</text>
+  <text x="38" y="80" font-family="Inter,Arial" font-size="14" fill="#667085">AU-guided temporal learning for subject-agnostic emotion cues</text>
+  <g transform="translate(38 130)">
+    <rect width="130" height="92" rx="16" fill="#fff" stroke="#dbeafe"/><rect x="20" y="22" width="38" height="48" rx="8" fill="#bfdbfe"/><rect x="70" y="22" width="38" height="48" rx="8" fill="#93c5fd"/><text x="65" y="122" text-anchor="middle" font-family="Inter,Arial" font-size="15" font-weight="750" fill="#334155">video frames</text>
+  </g>
+  <path d="M190 176 H260" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/><path d="M260 176 l-14 -10 v20z" fill="#94a3b8"/>
+  <g transform="translate(282 118)">
+    <rect width="156" height="116" rx="18" fill="#fff" stroke="#dbeafe"/><text x="78" y="35" text-anchor="middle" font-family="Inter,Arial" font-size="17" font-weight="800" fill="#111827">AU prompts</text><text x="78" y="66" text-anchor="middle" font-family="Inter,Arial" font-size="14" fill="#475569">AU06 · AU07</text><text x="78" y="90" text-anchor="middle" font-family="Inter,Arial" font-size="14" fill="#475569">AU12 · AU25</text>
+  </g>
+  <path d="M462 176 H532" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/><path d="M532 176 l-14 -10 v20z" fill="#94a3b8"/>
+  <g transform="translate(550 118)">
+    <rect width="132" height="116" rx="18" fill="url(#p)"/><text x="66" y="42" text-anchor="middle" font-family="Inter,Arial" font-size="17" font-weight="850" fill="#fff">Temporal</text><text x="66" y="68" text-anchor="middle" font-family="Inter,Arial" font-size="17" font-weight="850" fill="#fff">CLIP</text><text x="66" y="94" text-anchor="middle" font-family="Inter,Arial" font-size="14" fill="#e0f2fe">Emotion logits</text>
+  </g>
+  <g transform="translate(110 300)"><rect width="500" height="48" rx="24" fill="#fff" stroke="#dbeafe"/><text x="250" y="31" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="750" fill="#334155">Learns general AU-emotion alignment during training</text></g>
+</svg>

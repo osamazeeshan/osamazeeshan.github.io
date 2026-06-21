@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 920" role="img" aria-labelledby="title desc">
   <title id="title">Efficiency and Complexity Analysis</title>
-  <desc id="desc">Scatter plot using the paper values for FT CLIP, EmoCLIP, X-CLIP, Exp-CLIP, and CLIP-AU. X axis is throughput, y axis is WAR, marker size is trainable parameters, and color is GFLOPs on a log scale.</desc>
+  <desc id="desc">Scatter plot using the paper values for FT CLIP, EmoCLIP, X-CLIP, Exp-CLIP, CLIP-AU, and CLIP-AUTT. X axis is throughput, y axis is WAR, marker size is trainable parameters, and color is GFLOPs on a log scale.</desc>
   <defs>
     <style>
       .axis{stroke:#111827;stroke-width:2}.grid{stroke:#d9d9d9;stroke-width:2;stroke-dasharray:8 6}.tick{font-family:Georgia,serif;font-size:34px;fill:#111827}.label{font-family:Georgia,serif;font-size:36px;fill:#111827}.pt{stroke:#111827;stroke-width:1.6}.anno{font-family:Georgia,serif;font-size:27px;font-weight:800}.small{font-family:Georgia,serif;font-size:18px;fill:#111827}.legend-title{font-family:Georgia,serif;font-size:24px;font-weight:800;fill:#111827}
@@ -34,13 +34,14 @@
     <text class="label" x="570" y="848" text-anchor="middle">Throughput (videos/sec)</text>
     <text class="label" x="30" y="430" text-anchor="middle" transform="rotate(-90 30 430)">WAR (%)</text>
   </g>
-  <!-- data points; values: FT CLIP 4.7/69.8/170M/285G, EmoCLIP 13.8/67.8/12.7M/73.7G, X-CLIP 2.1/70.9/151M/147G, Exp-CLIP 8.0/70.2/10.5M/74.6G, CLIP-AU 16.9/78.0/1.3M/0.124G -->
+  <!-- data points; values: FT CLIP 4.7/69.8/170M/285G, EmoCLIP 13.8/67.8/12.7M/73.7G, X-CLIP 2.1/70.9/151M/147G, Exp-CLIP 8.0/70.2/10.5M/74.6G, CLIP-AU 16.9/78.0/1.3M/0.124G; CLIP-AUTT point added from the original Fig. 1(d) placement. -->
   <g>
     <circle class="pt" cx="252.2" cy="585.6" r="52" fill="#c10739"/><text class="anno" x="202" y="648" fill="#c10739">FT CLIP</text>
     <circle class="pt" cx="508.1" cy="658.2" r="22" fill="#e76f53"/><text class="anno" x="448" y="635" fill="#e76f53">EmoCLIP</text>
     <circle class="pt" cx="179.1" cy="545.6" r="49" fill="#d24c43"/><text class="anno" x="135" y="496" fill="#7c7c7c">X-CLIP</text>
     <circle class="pt" cx="345.0" cy="571.1" r="20" fill="#e66c55"/><text class="anno" x="287" y="544" fill="#e66c55">Exp-CLIP</text>
     <circle class="pt" cx="595.3" cy="287.9" r="15" fill="#82a5ff"/><text class="anno" x="542" y="265" fill="#7fa0ff">CLIP-AU</text>
+    <circle class="pt" cx="862.5" cy="138.9" r="8" fill="#4158c9"/><text class="anno" x="795" y="105" fill="#4158c9">CLIP-AUTT</text>
   </g>
   <!-- trainable params inset -->
   <g transform="translate(626 448)">
