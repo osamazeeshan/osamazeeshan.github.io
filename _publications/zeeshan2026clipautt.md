@@ -340,8 +340,32 @@ bibtex_key: zeeshan2026clipautt
     font-weight: 900;
   }
 
+  .clip-compact-figure {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clip-compact-figure img {
+    max-height: 560px;
+    object-fit: contain;
+  }
+
+  .clip-method-figures {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .clip-method-figures .clip-figure-card img {
+    max-height: 330px;
+    object-fit: contain;
+  }
+
   @media (max-width: 768px) {
-    .clip-card-grid {
+    .clip-card-grid,
+    .clip-method-figures {
       grid-template-columns: 1fr;
     }
 
@@ -354,6 +378,7 @@ bibtex_key: zeeshan2026clipautt
 
 <div class="clip-autt-page">
   <section class="clip-hero">
+    <img class="clip-logo" src="{{ '/assets/img/publications/clip-autt-logo.png' | relative_url }}" alt="CLIP-AUTT action unit prompting logo">
     <div class="clip-kicker">ECCV 2026 · Fine-Grained Video Emotion Recognition</div>
     <div class="clip-brand">
       <img class="clip-logo" src="{{ '/assets/img/publications/clip-autt-logo.png' | relative_url }}" alt="CLIP-AUTT action unit prompting logo">
@@ -397,9 +422,15 @@ bibtex_key: zeeshan2026clipautt
 
   <section class="clip-section" id="method">
     <h2>Method</h2>
-    <div class="clip-figure-card">
-      <img src="{{ '/assets/img/publications/CLIP-AUTT.png' | relative_url }}" alt="CLIP-AUTT method overview">
-      <p class="clip-caption">Method overview: CLIP-AUTT selects confident temporal windows and adapts Action Unit prompts for subject-specific video emotion recognition.</p>
+    <div class="clip-method-figures">
+      <div class="clip-figure-card">
+        <img src="{{ '/assets/img/publications/CLIP-AU.png' | relative_url }}" alt="Compact CLIP-AU method diagram">
+        <p class="clip-caption">CLIP-AU learns AU-guided temporal emotion cues with structured Action Unit prompts.</p>
+      </div>
+      <div class="clip-figure-card">
+        <img src="{{ '/assets/img/publications/CLIP-AUTT.png' | relative_url }}" alt="Compact CLIP-AUTT method diagram">
+        <p class="clip-caption">CLIP-AUTT adds entropy-guided temporal window selection and test-time AU prompt personalization.</p>
+      </div>
     </div>
     <div class="clip-card-grid">
       <article class="clip-card">
@@ -420,9 +451,9 @@ bibtex_key: zeeshan2026clipautt
   <section class="clip-section" id="efficiency">
     <h2>Efficiency and Complexity Analysis</h2>
     <p>
-      Following Fig. 1(d) of the paper, this analysis compares throughput, WAR, trainable parameters, and GFLOPs for FT CLIP, EmoCLIP, X-CLIP, Exp-CLIP, and CLIP-AU. CLIP-AU reaches the best accuracy-efficiency tradeoff: 78.0% WAR, 16.9 videos/sec throughput, only 1.3M trainable parameters, and 0.124 GFLOPs.
+      Following Fig. 1(d) of the paper, this analysis compares throughput, WAR, trainable parameters, and GFLOPs for FT CLIP, EmoCLIP, X-CLIP, Exp-CLIP, CLIP-AU, and the CLIP-AUTT point shown in the original figure. CLIP-AU reaches a strong fine-tuning tradeoff with 78.0% WAR, 16.9 videos/sec throughput, only 1.3M trainable parameters, and 0.124 GFLOPs, while CLIP-AUTT appears in the high-throughput, high-accuracy region.
     </p>
-    <div class="clip-figure-card">
+    <div class="clip-figure-card clip-compact-figure">
       <img src="{{ '/assets/img/publications/clip-autt-efficiency.svg' | relative_url }}" alt="Efficiency and complexity analysis from Fig. 1(d)">
       <p class="clip-caption">Efficiency and complexity summary from Fig. 1(d): marker size encodes trainable parameters, color encodes GFLOPs on a log scale, and CLIP-AU provides the strongest balance of accuracy, speed, parameter efficiency, and compute.</p>
     </div>
