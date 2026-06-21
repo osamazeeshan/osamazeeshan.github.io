@@ -468,7 +468,7 @@ bibtex_key: zeeshan2026clipautt
     </p>
   </details>
 
-  <details class="clip-section clip-accordion" id="method">
+  <details class="clip-section clip-accordion" id="method" open>
     <summary><h2>Method</h2></summary>
     <div class="clip-method-figures">
       <div class="clip-figure-card">
@@ -496,7 +496,7 @@ bibtex_key: zeeshan2026clipautt
     </div>
   </details>
 
-  <details class="clip-section clip-accordion" id="efficiency">
+  <details class="clip-section clip-accordion" id="efficiency" open>
     <summary><h2>Efficiency and Complexity Analysis</h2></summary>
     <p>
       Following Fig. 1(d) of the paper, this analysis compares throughput, WAR, trainable parameters, and GFLOPs for FT CLIP, EmoCLIP, X-CLIP, Exp-CLIP, CLIP-AU, and the CLIP-AUTT point shown in the original figure. CLIP-AU reaches a strong fine-tuning tradeoff with 78.0% WAR, 16.9 videos/sec throughput, only 1.3M trainable parameters, and 0.124 GFLOPs, while CLIP-AUTT appears in the high-throughput, high-accuracy region.
@@ -507,7 +507,7 @@ bibtex_key: zeeshan2026clipautt
     </div>
   </details>
 
-  <details class="clip-section clip-accordion" id="results">
+  <details class="clip-section clip-accordion" id="results" open>
     <summary><h2>Results: Comparison with CLIP-based FER and TTA Methods</h2></summary>
     <p>
       Table 1 reports averaged results over 10 target subjects per dataset. CLIP-AU improves the fine-tuning setting with AU-guided temporal alignment, while CLIP-AUTT provides the strongest test-time adaptation results across BioVid, StressID, and BAH.
@@ -537,7 +537,7 @@ bibtex_key: zeeshan2026clipautt
     </div>
   </details>
 
-  <details class="clip-section clip-accordion" id="visualization">
+  <details class="clip-section clip-accordion" id="visualization" open>
     <summary><h2>Visualization: Personalized AU alignment</h2></summary>
     <p>
       The right side of Fig. 4 qualitatively compares top activated AUs from CLIP-AU and CLIP-AUTT against AU activations estimated by OpenFace. The adapted CLIP-AUTT prompts better align with subject-specific eye and mouth movements, producing more meaningful AU combinations for the target subject.
@@ -548,7 +548,7 @@ bibtex_key: zeeshan2026clipautt
     </div>
   </details>
 
-  <details class="clip-section clip-accordion" id="takeaways">
+  <details class="clip-section clip-accordion" id="takeaways" open>
     <summary><h2>Key takeaways</h2></summary>
     <div class="clip-card-grid">
       <article class="clip-card">
@@ -566,7 +566,7 @@ bibtex_key: zeeshan2026clipautt
     </div>
   </details>
 
-  <details class="clip-section clip-accordion" id="citation">
+  <details class="clip-section clip-accordion" id="citation" open>
     <summary><h2>Citation</h2></summary>
     <div class="clip-citation-card">
 <pre><code>@inproceedings{zeeshan2026clipautt,
@@ -578,14 +578,14 @@ bibtex_key: zeeshan2026clipautt
     </div>
   </details>
 
-  <details class="clip-section clip-accordion" id="acknowledgements">
+  <details class="clip-section clip-accordion" id="acknowledgements" open>
     <summary><h2>Acknowledgements</h2></summary>
     <p>
       This research was partially supported by the Natural Sciences and Engineering Research Council of Canada, Fonds de recherche du Québec – Santé, Canada Foundation for Innovation, and the Digital Research Alliance of Canada.
     </p>
   </details>
 
-  <details class="clip-section clip-accordion" id="contact">
+  <details class="clip-section clip-accordion" id="contact" open>
     <summary><h2>Contact</h2></summary>
     <p>For questions, discussion, or collaboration, please reach out to the authors.</p>
   </details>
