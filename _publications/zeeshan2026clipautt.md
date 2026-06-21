@@ -52,11 +52,12 @@ bibtex_key: zeeshan2026clipautt
 
 
   .clip-brand {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: clamp(0.65rem, 2vw, 1.1rem);
-    margin-top: 0.35rem;
+    width: fit-content;
+    margin: 0.35rem auto 0;
   }
 
   .clip-logo {
