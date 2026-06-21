@@ -1,37 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
-  <title id="title">CLIP-AUTT efficiency analysis</title>
-  <desc id="desc">A stylized efficiency plot comparing accuracy, throughput, trainable parameters, and compute.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 920" role="img" aria-labelledby="title desc">
+  <title id="title">Efficiency and Complexity Analysis</title>
+  <desc id="desc">Scatter plot using the paper values for FT CLIP, EmoCLIP, X-CLIP, Exp-CLIP, and CLIP-AU. X axis is throughput, y axis is WAR, marker size is trainable parameters, and color is GFLOPs on a log scale.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#f8fbff"/>
-      <stop offset="1" stop-color="#eef2ff"/>
+    <style>
+      .axis{stroke:#111827;stroke-width:2}.grid{stroke:#d9d9d9;stroke-width:2;stroke-dasharray:8 6}.tick{font-family:Georgia,serif;font-size:34px;fill:#111827}.label{font-family:Georgia,serif;font-size:36px;fill:#111827}.pt{stroke:#111827;stroke-width:1.6}.anno{font-family:Georgia,serif;font-size:27px;font-weight:800}.small{font-family:Georgia,serif;font-size:18px;fill:#111827}.legend-title{font-family:Georgia,serif;font-size:24px;font-weight:800;fill:#111827}
+    </style>
+    <linearGradient id="gflops" x1="0" x2="0" y1="1" y2="0">
+      <stop offset="0" stop-color="#3f5cc8"/>
+      <stop offset="0.22" stop-color="#83a6ff"/>
+      <stop offset="0.48" stop-color="#d9e2ef"/>
+      <stop offset="0.68" stop-color="#f7b799"/>
+      <stop offset="0.85" stop-color="#e65f50"/>
+      <stop offset="1" stop-color="#b40426"/>
     </linearGradient>
-    <linearGradient id="bubble" x1="0" x2="1">
-      <stop offset="0" stop-color="#2563eb"/>
-      <stop offset="1" stop-color="#06b6d4"/>
-    </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.16"/>
-    </filter>
   </defs>
-  <rect width="920" height="520" rx="34" fill="url(#bg)"/>
-  <text x="52" y="58" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#111827">Efficiency analysis</text>
-  <text x="52" y="88" font-family="Inter, Arial, sans-serif" font-size="15" fill="#667085">Fig. 1(d): higher WAR and throughput with fewer trainable parameters and lower GFLOPs is preferred.</text>
-  <line x1="96" y1="410" x2="820" y2="410" stroke="#94a3b8" stroke-width="2"/>
-  <line x1="96" y1="410" x2="96" y2="130" stroke="#94a3b8" stroke-width="2"/>
-  <text x="405" y="468" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#334155">WAR / recognition performance →</text>
-  <text x="28" y="292" transform="rotate(-90 28 292)" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#334155">Throughput (videos/sec) ↑</text>
-  <g stroke="#e2e8f0" stroke-width="1">
-    <line x1="96" y1="340" x2="820" y2="340"/><line x1="96" y1="270" x2="820" y2="270"/><line x1="96" y1="200" x2="820" y2="200"/><line x1="240" y1="130" x2="240" y2="410"/><line x1="410" y1="130" x2="410" y2="410"/><line x1="580" y1="130" x2="580" y2="410"/><line x1="750" y1="130" x2="750" y2="410"/>
+  <rect width="1260" height="920" fill="#fff"/>
+  <!-- plot area: left=120 top=70 width=900 height=690; x domain 0..32, y domain 65..84 -->
+  <g>
+    <line class="axis" x1="120" y1="760" x2="1020" y2="760"/>
+    <line class="axis" x1="120" y1="760" x2="120" y2="70"/>
+    <line class="axis" x1="1020" y1="760" x2="1020" y2="70"/>
+    <line class="axis" x1="120" y1="70" x2="1020" y2="70"/>
+    <g class="grid">
+      <line x1="260.6" y1="70" x2="260.6" y2="760"/><line x1="401.3" y1="70" x2="401.3" y2="760"/><line x1="541.9" y1="70" x2="541.9" y2="760"/><line x1="682.5" y1="70" x2="682.5" y2="760"/><line x1="823.1" y1="70" x2="823.1" y2="760"/><line x1="963.8" y1="70" x2="963.8" y2="760"/>
+      <line x1="120" y1="669.2" x2="1020" y2="669.2"/><line x1="120" y1="578.4" x2="1020" y2="578.4"/><line x1="120" y1="487.6" x2="1020" y2="487.6"/><line x1="120" y1="396.8" x2="1020" y2="396.8"/><line x1="120" y1="306.1" x2="1020" y2="306.1"/><line x1="120" y1="215.3" x2="1020" y2="215.3"/><line x1="120" y1="124.5" x2="1020" y2="124.5"/>
+    </g>
+    <g class="tick" text-anchor="middle">
+      <text x="120" y="802">0</text><text x="260.6" y="802">5</text><text x="401.3" y="802">10</text><text x="541.9" y="802">15</text><text x="682.5" y="802">20</text><text x="823.1" y="802">25</text><text x="963.8" y="802">30</text>
+    </g>
+    <g class="tick" text-anchor="end">
+      <text x="103" y="771">65.0</text><text x="103" y="680">67.5</text><text x="103" y="589">70.0</text><text x="103" y="499">72.5</text><text x="103" y="408">75.0</text><text x="103" y="317">77.5</text><text x="103" y="226">80.0</text><text x="103" y="135">82.5</text>
+    </g>
+    <text class="label" x="570" y="848" text-anchor="middle">Throughput (videos/sec)</text>
+    <text class="label" x="30" y="430" text-anchor="middle" transform="rotate(-90 30 430)">WAR (%)</text>
   </g>
-  <g opacity="0.92">
-    <circle cx="260" cy="345" r="42" fill="#cbd5e1" filter="url(#shadow)"/><text x="214" y="410" font-family="Inter, Arial" font-size="14" fill="#475569">Full CLIP FT</text>
-    <circle cx="455" cy="302" r="34" fill="#93c5fd" filter="url(#shadow)"/><text x="417" y="365" font-family="Inter, Arial" font-size="14" fill="#475569">CLIP-AU</text>
-    <circle cx="675" cy="198" r="24" fill="url(#bubble)" filter="url(#shadow)"/><text x="625" y="252" font-family="Inter, Arial" font-size="15" font-weight="800" fill="#1d4ed8">CLIP-AUTT</text>
+  <!-- data points; values: FT CLIP 4.7/69.8/170M/285G, EmoCLIP 13.8/67.8/12.7M/73.7G, X-CLIP 2.1/70.9/151M/147G, Exp-CLIP 8.0/70.2/10.5M/74.6G, CLIP-AU 16.9/78.0/1.3M/0.124G -->
+  <g>
+    <circle class="pt" cx="252.2" cy="585.6" r="52" fill="#c10739"/><text class="anno" x="202" y="648" fill="#c10739">FT CLIP</text>
+    <circle class="pt" cx="508.1" cy="658.2" r="22" fill="#e76f53"/><text class="anno" x="448" y="635" fill="#e76f53">EmoCLIP</text>
+    <circle class="pt" cx="179.1" cy="545.6" r="49" fill="#d24c43"/><text class="anno" x="135" y="496" fill="#7c7c7c">X-CLIP</text>
+    <circle class="pt" cx="345.0" cy="571.1" r="20" fill="#e66c55"/><text class="anno" x="287" y="544" fill="#e66c55">Exp-CLIP</text>
+    <circle class="pt" cx="595.3" cy="287.9" r="15" fill="#82a5ff"/><text class="anno" x="542" y="265" fill="#7fa0ff">CLIP-AU</text>
   </g>
-  <g transform="translate(602 306)">
-    <rect width="245" height="92" rx="18" fill="#ffffff" stroke="#dbeafe"/>
-    <circle cx="24" cy="27" r="9" fill="url(#bubble)"/><text x="43" y="33" font-family="Inter, Arial" font-size="14" fill="#334155">Best accuracy-efficiency region</text>
-    <circle cx="24" cy="58" r="12" fill="#93c5fd"/><text x="43" y="63" font-family="Inter, Arial" font-size="14" fill="#334155">Bubble size: trainable params</text>
+  <!-- trainable params inset -->
+  <g transform="translate(626 448)">
+    <rect x="0" y="0" width="324" height="270" fill="none" stroke="#7f7f7f" stroke-width="3" stroke-dasharray="9 7"/>
+    <text class="legend-title" x="162" y="44" text-anchor="middle">Trainable Params</text>
+    <circle cx="52" cy="94" r="6" fill="#d9d9d9" stroke="#111827" stroke-width="2"/><text class="small" x="52" y="132" text-anchor="middle">0.1M</text>
+    <circle cx="124" cy="94" r="9" fill="#d9d9d9" stroke="#111827" stroke-width="2"/><text class="small" x="124" y="132" text-anchor="middle">1.3M</text>
+    <circle cx="196" cy="94" r="15" fill="#d9d9d9" stroke="#111827" stroke-width="2"/><text class="small" x="196" y="132" text-anchor="middle">10.5M</text>
+    <circle cx="276" cy="94" r="17" fill="#d9d9d9" stroke="#111827" stroke-width="2"/><text class="small" x="276" y="132" text-anchor="middle">12.7M</text>
+    <circle cx="88" cy="202" r="39" fill="#d9d9d9" stroke="#111827" stroke-width="2"/><text class="small" x="88" y="260" text-anchor="middle">151M</text>
+    <circle cx="210" cy="202" r="43" fill="#d9d9d9" stroke="#111827" stroke-width="2"/><text class="small" x="210" y="260" text-anchor="middle">170M</text>
+  </g>
+  <!-- colorbar -->
+  <g transform="translate(1076 70)">
+    <rect width="34" height="690" fill="url(#gflops)"/>
+    <g class="tick">
+      <text x="52" y="96">10<tspan baseline-shift="super" font-size="20">2</tspan></text>
+      <text x="52" y="277">10<tspan baseline-shift="super" font-size="20">1</tspan></text>
+      <text x="52" y="457">10<tspan baseline-shift="super" font-size="20">0</tspan></text>
+      <text x="52" y="638">10<tspan baseline-shift="super" font-size="20">−1</tspan></text>
+    </g>
+    <text class="label" x="142" y="345" text-anchor="middle" transform="rotate(90 142 345)">GFLOPs (log scale)</text>
   </g>
 </svg>

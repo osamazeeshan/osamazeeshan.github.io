@@ -360,7 +360,7 @@ bibtex_key: zeeshan2026clipautt
   <nav class="clip-nav" aria-label="CLIP-AUTT page sections">
     <a href="#abstract">Abstract</a>
     <a href="#method">Method</a>
-    <a href="#efficiency">Efficiency</a>
+    <a href="#efficiency">Efficiency & Complexity</a>
     <a href="#results">Results</a>
     <a href="#visualization">Visualization</a>
     <a href="#takeaways">Takeaways</a>
@@ -400,13 +400,13 @@ bibtex_key: zeeshan2026clipautt
   </section>
 
   <section class="clip-section" id="efficiency">
-    <h2>Efficiency analysis</h2>
+    <h2>Efficiency and Complexity Analysis</h2>
     <p>
-      Following the efficiency view in Fig. 1(d) of the paper, CLIP-AUTT is designed to improve recognition while keeping adaptation lightweight: CLIP remains frozen, only AU prompt representations are tuned at test time, and the temporal window selector focuses computation on the most expressive segment.
+      Following Fig. 1(d) of the paper, this analysis compares throughput, WAR, trainable parameters, and GFLOPs for FT CLIP, EmoCLIP, X-CLIP, Exp-CLIP, and CLIP-AU. CLIP-AU reaches the best accuracy-efficiency tradeoff: 78.0% WAR, 16.9 videos/sec throughput, only 1.3M trainable parameters, and 0.124 GFLOPs.
     </p>
     <div class="clip-figure-card">
-      <img src="{{ '/assets/img/publications/clip-autt-efficiency.svg' | relative_url }}" alt="Efficiency analysis inspired by Fig. 1(d)">
-      <p class="clip-caption">Efficiency summary inspired by Fig. 1(d): CLIP-AUTT targets the favorable region of high WAR and high throughput with small trainable adaptation overhead.</p>
+      <img src="{{ '/assets/img/publications/clip-autt-efficiency.svg' | relative_url }}" alt="Efficiency and complexity analysis from Fig. 1(d)">
+      <p class="clip-caption">Efficiency and complexity summary from Fig. 1(d): marker size encodes trainable parameters, color encodes GFLOPs on a log scale, and CLIP-AU provides the strongest balance of accuracy, speed, parameter efficiency, and compute.</p>
     </div>
   </section>
 
