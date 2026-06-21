@@ -24,8 +24,8 @@ bibtex_key: zeeshan2026clipautt
   .clip-hero {
     position: relative;
     overflow: hidden;
-    margin: 1.5rem 0 2.5rem;
-    padding: clamp(2rem, 6vw, 4.5rem) clamp(1rem, 4vw, 3rem);
+    margin: 1rem clamp(1rem, 5vw, 4rem) 1.5rem;
+    padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 3vw, 2.25rem);
     border: 1px solid var(--clip-border);
     border-radius: 2rem;
     background:
@@ -168,9 +168,10 @@ bibtex_key: zeeshan2026clipautt
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.45rem;
-    margin: 0 auto 2rem;
-    padding: 0.45rem;
+    gap: 0.35rem;
+    max-width: 1080px;
+    margin: 0 auto 1.25rem;
+    padding: 0.35rem;
     border: 1px solid rgba(17, 24, 39, 0.08);
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.86);
@@ -193,18 +194,51 @@ bibtex_key: zeeshan2026clipautt
   }
 
   .clip-section {
-    margin: 2.5rem clamp(0.75rem, 3vw, 2.5rem);
-    padding: clamp(1.2rem, 3vw, 2rem);
+    max-width: 1080px;
+    margin: 1rem auto;
+    padding: clamp(0.9rem, 2vw, 1.35rem);
     border: 1px solid rgba(17, 24, 39, 0.08);
-    border-radius: 1.75rem;
-    background: rgba(255, 255, 255, 0.78);
-    box-shadow: 0 18px 44px rgba(15, 23, 42, 0.07);
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  }
+
+  .clip-accordion summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .clip-accordion summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .clip-accordion summary::after {
+    content: "⌄";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background: #eef6ff;
+    color: var(--clip-blue);
+    font-size: 1.1rem;
+    font-weight: 900;
+    transition: transform 0.18s ease;
+  }
+
+  .clip-accordion[open] summary::after {
+    transform: rotate(180deg);
   }
 
   .clip-section h2 {
-    margin-bottom: 1rem;
+    margin: 0;
     color: var(--clip-navy);
-    font-size: clamp(1.65rem, 3vw, 2.35rem);
+    font-size: clamp(1.35rem, 2.2vw, 1.85rem);
     font-weight: 850;
     letter-spacing: -0.035em;
   }
@@ -212,15 +246,21 @@ bibtex_key: zeeshan2026clipautt
   .clip-section p,
   .clip-section li {
     color: #374151;
-    font-size: 1.02rem;
-    line-height: 1.75;
+    font-size: 0.98rem;
+    line-height: 1.62;
+  }
+
+  .clip-accordion > p:first-of-type,
+  .clip-accordion > div:first-of-type,
+  .clip-accordion > ul:first-of-type {
+    margin-top: 1rem;
   }
 
   .clip-card-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-    margin-top: 1.25rem;
+    gap: 0.75rem;
+    margin-top: 1rem;
   }
 
   .clip-card,
@@ -233,7 +273,7 @@ bibtex_key: zeeshan2026clipautt
   }
 
   .clip-card {
-    padding: 1.25rem;
+    padding: 1rem;
   }
 
   .clip-card h3 {
@@ -250,7 +290,7 @@ bibtex_key: zeeshan2026clipautt
 
   .clip-figure-card {
     overflow: hidden;
-    padding: clamp(0.75rem, 2vw, 1.25rem);
+    padding: clamp(0.65rem, 1.5vw, 1rem);
     background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
   }
 
@@ -324,9 +364,8 @@ bibtex_key: zeeshan2026clipautt
     font-weight: 850;
   }
 
-  .clip-results-table td:nth-child(2),
-  .clip-results-table th:nth-child(2) {
-    text-align: left;
+  .clip-results-table .clip-method-cell {
+    text-align: center;
   }
 
   .clip-results-table .clip-highlight td {
@@ -341,26 +380,33 @@ bibtex_key: zeeshan2026clipautt
     font-weight: 900;
   }
 
+  .clip-results-table .clip-setting-cell {
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 850;
+  }
+
   .clip-compact-figure {
-    max-width: 880px;
+    max-width: 760px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .clip-compact-figure img {
-    max-height: 560px;
+    max-height: 440px;
     object-fit: contain;
   }
 
   .clip-method-figures {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 0.75rem;
+    max-width: 900px;
+    margin: 1rem auto;
   }
 
   .clip-method-figures .clip-figure-card img {
-    max-height: 330px;
+    max-height: 260px;
     object-fit: contain;
   }
 
@@ -409,20 +455,21 @@ bibtex_key: zeeshan2026clipautt
     <a href="#visualization">Visualization</a>
     <a href="#takeaways">Takeaways</a>
     <a href="#citation">Citation</a>
+    <a href="#acknowledgements">Acknowledgements</a>
   </nav>
 
-  <section class="clip-section" id="abstract">
-    <h2>Abstract</h2>
+  <details class="clip-section clip-accordion" id="abstract" open>
+    <summary><h2>Abstract</h2></summary>
     <p>
       Personalization in emotion recognition (ER) is essential for an accurate interpretation of subtle and subject-specific expressive patterns. Recent advances in vision–language models (VLMs) such as CLIP demonstrate strong potential for leveraging joint image–text representations in ER. However, CLIP-based methods either depend on CLIP’s contrastive pretraining or on LLMs to generate descriptive text prompts, which are noisy, computationally expensive, and fail to capture fine-grained expressions, leading to degraded performance. In this work, we leverage Action Units (AUs) as structured textual prompts within CLIP to model fine-grained facial expressions. AUs encode the subtle muscle activations underlying expressions, providing localized and interpretable semantic cues for more robust ER.
     </p>
     <p>
       We introduce CLIP-AU, a lightweight AU–guided temporal learning method that integrates interpretable AU semantics into CLIP. It learns generic, subject-agnostic representations by aligning AU prompts with facial dynamics, enabling fine-grained ER without CLIP fine-tuning or LLM-generated text supervision. Although CLIP-AU models fine-grained AU semantics, it does not adapt to subject-specific variability in subtle expressions. To address this limitation, we propose CLIP-AUTT, a video-based test-time personalization method that dynamically adapts AU prompts to videos from unseen subjects. By combining entropy-guided temporal window selection with prompt tuning, CLIP-AUTT enables subject-specific adaptation while preserving temporal consistency. Our extensive experiments on three challenging video-based subtle ER datasets — BioVid, StressID, and BAH — indicate that CLIP-AU and CLIP-AUTT outperform state-of-the-art CLIP-based FER and TTA methods, achieving robust and personalized subtle ER.
     </p>
-  </section>
+  </details>
 
-  <section class="clip-section" id="method">
-    <h2>Method</h2>
+  <details class="clip-section clip-accordion" id="method" open>
+    <summary><h2>Method</h2></summary>
     <div class="clip-method-figures">
       <div class="clip-figure-card">
         <img src="{{ '/assets/img/publications/CLIP-AU.png' | relative_url }}" alt="Compact CLIP-AU method diagram">
@@ -447,10 +494,10 @@ bibtex_key: zeeshan2026clipautt
         <p>Entropy-guided temporal window selection and prompt tuning adapt predictions to subject-specific expression patterns without labeled target data.</p>
       </article>
     </div>
-  </section>
+  </details>
 
-  <section class="clip-section" id="efficiency">
-    <h2>Efficiency and Complexity Analysis</h2>
+  <details class="clip-section clip-accordion" id="efficiency" open>
+    <summary><h2>Efficiency and Complexity Analysis</h2></summary>
     <p>
       Following Fig. 1(d) of the paper, this analysis compares throughput, WAR, trainable parameters, and GFLOPs for FT CLIP, EmoCLIP, X-CLIP, Exp-CLIP, CLIP-AU, and the CLIP-AUTT point shown in the original figure. CLIP-AU reaches a strong fine-tuning tradeoff with 78.0% WAR, 16.9 videos/sec throughput, only 1.3M trainable parameters, and 0.124 GFLOPs, while CLIP-AUTT appears in the high-throughput, high-accuracy region.
     </p>
@@ -458,39 +505,40 @@ bibtex_key: zeeshan2026clipautt
       <img src="{{ '/assets/img/publications/clip-autt-efficiency.svg' | relative_url }}" alt="Efficiency and complexity analysis from Fig. 1(d)">
       <p class="clip-caption">Efficiency and complexity summary from Fig. 1(d): marker size encodes trainable parameters, color encodes GFLOPs on a log scale, and CLIP-AU provides the strongest balance of accuracy, speed, parameter efficiency, and compute.</p>
     </div>
-  </section>
+  </details>
 
-  <section class="clip-section" id="results">
-    <h2>Results: Comparison with CLIP-based FER and TTA Methods</h2>
+  <details class="clip-section clip-accordion" id="results" open>
+    <summary><h2>Results: Comparison with CLIP-based FER and TTA Methods</h2></summary>
     <p>
       Table 1 reports averaged results over 10 target subjects per dataset. CLIP-AU improves the fine-tuning setting with AU-guided temporal alignment, while CLIP-AUTT provides the strongest test-time adaptation results across BioVid, StressID, and BAH.
     </p>
     <div class="clip-table-wrap">
       <table class="clip-results-table">
         <thead>
-          <tr><th>Setting</th><th>Method</th><th>BioVid WAR</th><th>BioVid F1</th><th>StressID WAR</th><th>StressID F1</th><th>BAH WAR</th><th>BAH F1</th></tr>
+          <tr><th rowspan="2">Setting</th><th rowspan="2">Method</th><th colspan="2">BioVid</th><th colspan="2">StressID</th><th colspan="2">BAH</th></tr>
+          <tr><th>WAR</th><th>F1</th><th>WAR</th><th>F1</th><th>WAR</th><th>F1</th></tr>
         </thead>
         <tbody>
-          <tr><td>ZS</td><td>CLIP-ViT-B/32 (ICML’21)</td><td>50.0</td><td>33.3</td><td>60.4</td><td>34.8</td><td>39.5</td><td>28.1</td></tr>
-          <tr><td>FT</td><td>CLIP-ViT-B/32 (ICML’21)</td><td>69.7</td><td>66.6</td><td>67.0</td><td>44.5</td><td>60.4</td><td>39.8</td></tr>
-          <tr><td>FT</td><td>EmoCLIP (FG’24)</td><td>67.7</td><td>63.4</td><td>63.5</td><td>35.9</td><td>56.2</td><td>36.5</td></tr>
-          <tr><td>FT</td><td>X-CLIP (ECCV’22)</td><td>70.9</td><td>57.9</td><td>62.3</td><td>41.3</td><td>63.0</td><td>39.2</td></tr>
-          <tr><td>FT</td><td>Exp-CLIP (WACV’25)</td><td>70.2</td><td>66.7</td><td>63.1</td><td>44.5</td><td>62.2</td><td>38.5</td></tr>
-          <tr class="clip-highlight"><td>FT</td><td>CLIP-AU</td><td>78.0</td><td>74.8</td><td>66.5</td><td>58.5</td><td>68.3</td><td>40.3</td></tr>
-          <tr><td>TTA</td><td>TPT (NeurIPS’22)</td><td>71.1</td><td>67.5</td><td>70.9</td><td>57.9</td><td>65.6</td><td>39.7</td></tr>
-          <tr><td>TTA</td><td>TDA (CVPR’24)</td><td>71.4</td><td>68.2</td><td>69.7</td><td>49.9</td><td>65.2</td><td>39.9</td></tr>
-          <tr><td>TTA</td><td>DPE (NeurIPS’24)</td><td>73.1</td><td>69.6</td><td>71.3</td><td>54.2</td><td>66.7</td><td>39.4</td></tr>
-          <tr><td>TTA</td><td>PromptAlign (NeurIPS’23)</td><td>75.3</td><td>71.6</td><td>74.6</td><td>53.2</td><td>67.1</td><td>39.7</td></tr>
-          <tr><td>TTA</td><td>ReTA (ACMMM’25)</td><td>75.1</td><td>71.3</td><td>71.8</td><td>52.8</td><td>67.6</td><td>39.8</td></tr>
-          <tr><td>TTA</td><td>T3AL (CVPR’24)</td><td>76.1</td><td>72.9</td><td>75.9</td><td>59.4</td><td>67.9</td><td>40.7</td></tr>
-          <tr class="clip-best"><td>TTA</td><td>CLIP-AUTT</td><td>81.5</td><td>78.0</td><td>80.8</td><td>77.9</td><td>69.8</td><td>41.1</td></tr>
+          <tr><td>ZS</td><td class="clip-method-cell">CLIP-ViT-B/32 (ICML’21)</td><td>50.0</td><td>33.3</td><td>60.4</td><td>34.8</td><td>39.5</td><td>28.1</td></tr>
+          <tr><td rowspan="5" class="clip-setting-cell">FT</td><td class="clip-method-cell">CLIP-ViT-B/32 (ICML’21)</td><td>69.7</td><td>66.6</td><td>67.0</td><td>44.5</td><td>60.4</td><td>39.8</td></tr>
+          <tr><td class="clip-method-cell">EmoCLIP (FG’24)</td><td>67.7</td><td>63.4</td><td>63.5</td><td>35.9</td><td>56.2</td><td>36.5</td></tr>
+          <tr><td class="clip-method-cell">X-CLIP (ECCV’22)</td><td>70.9</td><td>57.9</td><td>62.3</td><td>41.3</td><td>63.0</td><td>39.2</td></tr>
+          <tr><td class="clip-method-cell">Exp-CLIP (WACV’25)</td><td>70.2</td><td>66.7</td><td>63.1</td><td>44.5</td><td>62.2</td><td>38.5</td></tr>
+          <tr class="clip-highlight"><td class="clip-method-cell">CLIP-AU</td><td>78.0</td><td>74.8</td><td>66.5</td><td>58.5</td><td>68.3</td><td>40.3</td></tr>
+          <tr><td rowspan="7" class="clip-setting-cell">TTA</td><td class="clip-method-cell">TPT (NeurIPS’22)</td><td>71.1</td><td>67.5</td><td>70.9</td><td>57.9</td><td>65.6</td><td>39.7</td></tr>
+          <tr><td class="clip-method-cell">TDA (CVPR’24)</td><td>71.4</td><td>68.2</td><td>69.7</td><td>49.9</td><td>65.2</td><td>39.9</td></tr>
+          <tr><td class="clip-method-cell">DPE (NeurIPS’24)</td><td>73.1</td><td>69.6</td><td>71.3</td><td>54.2</td><td>66.7</td><td>39.4</td></tr>
+          <tr><td class="clip-method-cell">PromptAlign (NeurIPS’23)</td><td>75.3</td><td>71.6</td><td>74.6</td><td>53.2</td><td>67.1</td><td>39.7</td></tr>
+          <tr><td class="clip-method-cell">ReTA (ACMMM’25)</td><td>75.1</td><td>71.3</td><td>71.8</td><td>52.8</td><td>67.6</td><td>39.8</td></tr>
+          <tr><td class="clip-method-cell">T3AL (CVPR’24)</td><td>76.1</td><td>72.9</td><td>75.9</td><td>59.4</td><td>67.9</td><td>40.7</td></tr>
+          <tr class="clip-best"><td class="clip-method-cell">CLIP-AUTT</td><td>81.5</td><td>78.0</td><td>80.8</td><td>77.9</td><td>69.8</td><td>41.1</td></tr>
         </tbody>
       </table>
     </div>
-  </section>
+  </details>
 
-  <section class="clip-section" id="visualization">
-    <h2>Visualization: Personalized AU alignment</h2>
+  <details class="clip-section clip-accordion" id="visualization" open>
+    <summary><h2>Visualization: Personalized AU alignment</h2></summary>
     <p>
       The right side of Fig. 4 qualitatively compares top activated AUs from CLIP-AU and CLIP-AUTT against AU activations estimated by OpenFace. The adapted CLIP-AUTT prompts better align with subject-specific eye and mouth movements, producing more meaningful AU combinations for the target subject.
     </p>
@@ -498,10 +546,10 @@ bibtex_key: zeeshan2026clipautt
       <img src="{{ '/assets/img/publications/clip-autt-au-visualization.png' | relative_url }}" alt="Qualitative AU visualization inspired by the right side of Fig. 4">
       <p class="clip-caption">Visualization inspired by Fig. 4 right: CLIP-AUTT refines generic AU semantics into more subject-specific AU activation patterns.</p>
     </div>
-  </section>
+  </details>
 
-  <section class="clip-section" id="takeaways">
-    <h2>Key takeaways</h2>
+  <details class="clip-section clip-accordion" id="takeaways" open>
+    <summary><h2>Key takeaways</h2></summary>
     <div class="clip-card-grid">
       <article class="clip-card">
         <h3>Interpretable</h3>
@@ -516,10 +564,10 @@ bibtex_key: zeeshan2026clipautt
         <p>The method targets real-world behavioral analysis where labels are scarce and expressions are subtle.</p>
       </article>
     </div>
-  </section>
+  </details>
 
-  <section class="clip-section" id="citation">
-    <h2>Citation</h2>
+  <details class="clip-section clip-accordion" id="citation" open>
+    <summary><h2>Citation</h2></summary>
     <div class="clip-citation-card">
 <pre><code>@inproceedings{zeeshan2026clipautt,
   title={CLIP-AUTT: Test-Time Personalization with Action Unit Prompting for Fine-Grained Video Emotion Recognition},
@@ -528,10 +576,28 @@ bibtex_key: zeeshan2026clipautt
   year={2026}
 }</code></pre>
     </div>
-  </section>
+  </details>
 
-  <section class="clip-section" id="contact">
-    <h2>Contact</h2>
+  <details class="clip-section clip-accordion" id="acknowledgements" open>
+    <summary><h2>Acknowledgements</h2></summary>
+    <p>
+      This research was partially supported by the Natural Sciences and Engineering Research Council of Canada, Fonds de recherche du Québec – Santé, Canada Foundation for Innovation, and the Digital Research Alliance of Canada.
+    </p>
+  </details>
+
+  <details class="clip-section clip-accordion" id="contact" open>
+    <summary><h2>Contact</h2></summary>
     <p>For questions, discussion, or collaboration, please reach out to the authors.</p>
-  </section>
+  </details>
 </div>
+
+<script>
+  document.querySelectorAll('.clip-nav a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target instanceof HTMLDetailsElement) {
+        target.open = true;
+      }
+    });
+  });
+</script>
