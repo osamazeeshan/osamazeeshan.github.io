@@ -324,9 +324,8 @@ bibtex_key: zeeshan2026clipautt
     font-weight: 850;
   }
 
-  .clip-results-table td:nth-child(2),
-  .clip-results-table th:nth-child(2) {
-    text-align: left;
+  .clip-results-table .clip-method-cell {
+    text-align: center;
   }
 
   .clip-results-table .clip-highlight td {
@@ -478,19 +477,19 @@ bibtex_key: zeeshan2026clipautt
           <tr><th>WAR</th><th>F1</th><th>WAR</th><th>F1</th><th>WAR</th><th>F1</th></tr>
         </thead>
         <tbody>
-          <tr><td>ZS</td><td>CLIP-ViT-B/32 (ICML’21)</td><td>50.0</td><td>33.3</td><td>60.4</td><td>34.8</td><td>39.5</td><td>28.1</td></tr>
-          <tr><td rowspan="5" class="clip-setting-cell">FT</td><td>CLIP-ViT-B/32 (ICML’21)</td><td>69.7</td><td>66.6</td><td>67.0</td><td>44.5</td><td>60.4</td><td>39.8</td></tr>
-          <tr><td>EmoCLIP (FG’24)</td><td>67.7</td><td>63.4</td><td>63.5</td><td>35.9</td><td>56.2</td><td>36.5</td></tr>
-          <tr><td>X-CLIP (ECCV’22)</td><td>70.9</td><td>57.9</td><td>62.3</td><td>41.3</td><td>63.0</td><td>39.2</td></tr>
-          <tr><td>Exp-CLIP (WACV’25)</td><td>70.2</td><td>66.7</td><td>63.1</td><td>44.5</td><td>62.2</td><td>38.5</td></tr>
-          <tr class="clip-highlight"><td>CLIP-AU</td><td>78.0</td><td>74.8</td><td>66.5</td><td>58.5</td><td>68.3</td><td>40.3</td></tr>
-          <tr><td rowspan="7" class="clip-setting-cell">TTA</td><td>TPT (NeurIPS’22)</td><td>71.1</td><td>67.5</td><td>70.9</td><td>57.9</td><td>65.6</td><td>39.7</td></tr>
-          <tr><td>TDA (CVPR’24)</td><td>71.4</td><td>68.2</td><td>69.7</td><td>49.9</td><td>65.2</td><td>39.9</td></tr>
-          <tr><td>DPE (NeurIPS’24)</td><td>73.1</td><td>69.6</td><td>71.3</td><td>54.2</td><td>66.7</td><td>39.4</td></tr>
-          <tr><td>PromptAlign (NeurIPS’23)</td><td>75.3</td><td>71.6</td><td>74.6</td><td>53.2</td><td>67.1</td><td>39.7</td></tr>
-          <tr><td>ReTA (ACMMM’25)</td><td>75.1</td><td>71.3</td><td>71.8</td><td>52.8</td><td>67.6</td><td>39.8</td></tr>
-          <tr><td>T3AL (CVPR’24)</td><td>76.1</td><td>72.9</td><td>75.9</td><td>59.4</td><td>67.9</td><td>40.7</td></tr>
-          <tr class="clip-best"><td>CLIP-AUTT</td><td>81.5</td><td>78.0</td><td>80.8</td><td>77.9</td><td>69.8</td><td>41.1</td></tr>
+          <tr><td>ZS</td><td class="clip-method-cell">CLIP-ViT-B/32 (ICML’21)</td><td>50.0</td><td>33.3</td><td>60.4</td><td>34.8</td><td>39.5</td><td>28.1</td></tr>
+          <tr><td rowspan="5" class="clip-setting-cell">FT</td><td class="clip-method-cell">CLIP-ViT-B/32 (ICML’21)</td><td>69.7</td><td>66.6</td><td>67.0</td><td>44.5</td><td>60.4</td><td>39.8</td></tr>
+          <tr><td class="clip-method-cell">EmoCLIP (FG’24)</td><td>67.7</td><td>63.4</td><td>63.5</td><td>35.9</td><td>56.2</td><td>36.5</td></tr>
+          <tr><td class="clip-method-cell">X-CLIP (ECCV’22)</td><td>70.9</td><td>57.9</td><td>62.3</td><td>41.3</td><td>63.0</td><td>39.2</td></tr>
+          <tr><td class="clip-method-cell">Exp-CLIP (WACV’25)</td><td>70.2</td><td>66.7</td><td>63.1</td><td>44.5</td><td>62.2</td><td>38.5</td></tr>
+          <tr class="clip-highlight"><td class="clip-method-cell">CLIP-AU</td><td>78.0</td><td>74.8</td><td>66.5</td><td>58.5</td><td>68.3</td><td>40.3</td></tr>
+          <tr><td rowspan="7" class="clip-setting-cell">TTA</td><td class="clip-method-cell">TPT (NeurIPS’22)</td><td>71.1</td><td>67.5</td><td>70.9</td><td>57.9</td><td>65.6</td><td>39.7</td></tr>
+          <tr><td class="clip-method-cell">TDA (CVPR’24)</td><td>71.4</td><td>68.2</td><td>69.7</td><td>49.9</td><td>65.2</td><td>39.9</td></tr>
+          <tr><td class="clip-method-cell">DPE (NeurIPS’24)</td><td>73.1</td><td>69.6</td><td>71.3</td><td>54.2</td><td>66.7</td><td>39.4</td></tr>
+          <tr><td class="clip-method-cell">PromptAlign (NeurIPS’23)</td><td>75.3</td><td>71.6</td><td>74.6</td><td>53.2</td><td>67.1</td><td>39.7</td></tr>
+          <tr><td class="clip-method-cell">ReTA (ACMMM’25)</td><td>75.1</td><td>71.3</td><td>71.8</td><td>52.8</td><td>67.6</td><td>39.8</td></tr>
+          <tr><td class="clip-method-cell">T3AL (CVPR’24)</td><td>76.1</td><td>72.9</td><td>75.9</td><td>59.4</td><td>67.9</td><td>40.7</td></tr>
+          <tr class="clip-best"><td class="clip-method-cell">CLIP-AUTT</td><td>81.5</td><td>78.0</td><td>80.8</td><td>77.9</td><td>69.8</td><td>41.1</td></tr>
         </tbody>
       </table>
     </div>
