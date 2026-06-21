@@ -50,6 +50,16 @@ bibtex_key: zeeshan2026clipautt
     z-index: 1;
   }
 
+
+  .clip-logo {
+    display: block;
+    width: min(260px, 58vw);
+    height: auto;
+    margin: 0 auto 1.15rem;
+    border-radius: 1.5rem;
+    filter: drop-shadow(0 18px 28px rgba(15, 23, 42, 0.14));
+  }
+
   .clip-kicker {
     display: inline-flex;
     align-items: center;
@@ -69,10 +79,10 @@ bibtex_key: zeeshan2026clipautt
   .clip-title {
     margin: 0;
     color: var(--clip-navy);
-    font-size: clamp(3rem, 10vw, 6.25rem);
+    font-size: clamp(2.3rem, 6.5vw, 4.4rem);
     font-weight: 900;
     letter-spacing: -0.08em;
-    line-height: 0.9;
+    line-height: 0.95;
   }
 
   .clip-subtitle {
@@ -363,6 +373,7 @@ bibtex_key: zeeshan2026clipautt
 
 <div class="clip-autt-page">
   <section class="clip-hero">
+    <img class="clip-logo" src="{{ '/assets/img/publications/clip-autt-logo.svg' | relative_url }}" alt="CLIP-AUTT action unit prompting logo">
     <div class="clip-kicker">ECCV 2026 · Fine-Grained Video Emotion Recognition</div>
     <h1 class="clip-title">CLIP-AUTT</h1>
     <p class="clip-subtitle">Test-Time Personalization with Action Unit Prompting for Fine-Grained Video Emotion Recognition</p>
