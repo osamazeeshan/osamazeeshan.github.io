@@ -4,78 +4,484 @@ title: CLIP-AUTT: Test-Time Personalization with Action Unit Prompting for Fine-
 bibtex_key: zeeshan2026clipautt
 ---
 
-<div class="text-center my-4">
-  <h1 class="post-title">CLIP-AUTT</h1>
-  <h3 class="font-weight-normal">Test-Time Personalization with Action Unit Prompting for Fine-Grained Video Emotion Recognition</h3>
-  <p class="lead mt-3">
-    Muhammad Osama Zeeshan · Masoumeh Sharafi · Benoît Savary · Alessandro Lameiras Koerich · Marco Pedersoli · Eric Granger
-  </p>
-  <p class="h5"><strong>In ECCV 2026: The 19th European Conference on Computer Vision, Malmö, Sweden</strong></p>
-  <p class="mt-3">
-    <a class="btn btn-sm z-depth-0" href="https://arxiv.org/pdf/2603.27999" role="button">PDF</a>
-    <a class="btn btn-sm z-depth-0" href="#citation" role="button">Citation</a>
-  </p>
-</div>
+<style>
+  .clip-autt-page {
+    --clip-navy: #111827;
+    --clip-blue: #2563eb;
+    --clip-cyan: #06b6d4;
+    --clip-purple: #7c3aed;
+    --clip-ink: #1f2937;
+    --clip-muted: #667085;
+    --clip-card: rgba(255, 255, 255, 0.88);
+    --clip-border: rgba(37, 99, 235, 0.16);
+    color: var(--clip-ink);
+  }
 
----
+  .clip-autt-page a {
+    color: var(--clip-blue);
+  }
 
-{% include figure.liquid loading="eager" path="assets/img/publications/CLIP-AUTT.png" class="img-fluid rounded z-depth-1" %}
+  .clip-hero {
+    position: relative;
+    overflow: hidden;
+    margin: 1.5rem 0 2.5rem;
+    padding: clamp(2rem, 6vw, 4.5rem) clamp(1rem, 4vw, 3rem);
+    border: 1px solid var(--clip-border);
+    border-radius: 2rem;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(6, 182, 212, 0.24), transparent 34%),
+      radial-gradient(circle at 85% 12%, rgba(124, 58, 237, 0.20), transparent 30%),
+      linear-gradient(135deg, #f8fbff 0%, #eef6ff 48%, #f8f5ff 100%);
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+    text-align: center;
+  }
 
-## Overview
+  .clip-hero::after {
+    content: "";
+    position: absolute;
+    inset: auto -12% -35% -12%;
+    height: 55%;
+    background: linear-gradient(90deg, rgba(37, 99, 235, 0.10), rgba(6, 182, 212, 0.16), rgba(124, 58, 237, 0.10));
+    filter: blur(28px);
+  }
 
-CLIP-AUTT focuses on **fine-grained video emotion recognition** for subtle, subject-specific expressive patterns. It brings together vision-language representations, facial Action Unit (AU) semantics, and test-time personalization so that emotion recognition models can adapt to unseen subjects without requiring labeled target data.
+  .clip-hero > * {
+    position: relative;
+    z-index: 1;
+  }
 
-## Abstract
+  .clip-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid rgba(37, 99, 235, 0.20);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.78);
+    color: var(--clip-blue);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
 
-Personalized emotion recognition is important for interpreting subtle expressions that vary across individuals. CLIP-AUTT uses **Action Units as structured text prompts** inside CLIP, allowing the model to capture localized and interpretable facial cues instead of relying on noisy generated text prompts or expensive language-model supervision.
+  .clip-title {
+    margin: 0;
+    color: var(--clip-navy);
+    font-size: clamp(3rem, 10vw, 6.25rem);
+    font-weight: 900;
+    letter-spacing: -0.08em;
+    line-height: 0.9;
+  }
 
-The work first introduces **CLIP-AU**, an AU-guided temporal learning approach for learning subject-agnostic facial dynamics. It then extends this formulation to **CLIP-AUTT**, a test-time personalization method that adapts AU prompts for videos from unseen subjects while preserving temporal consistency.
+  .clip-subtitle {
+    max-width: 980px;
+    margin: 1rem auto 0;
+    color: #263348;
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    font-weight: 650;
+    line-height: 1.2;
+  }
 
-## Method
+  .clip-authors,
+  .clip-affiliation {
+    max-width: 920px;
+    margin: 1rem auto 0;
+    color: var(--clip-muted);
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
 
-CLIP-AUTT is built around three core ideas:
+  .clip-authors strong {
+    color: var(--clip-ink);
+  }
 
-1. **AU-guided prompting:** Action Units provide interpretable semantic prompts that describe fine-grained facial muscle activations.
-2. **Temporal emotion modeling:** Video-level temporal information is used to capture gradual, subtle changes in expression.
-3. **Test-time personalization:** Entropy-guided temporal window selection and prompt tuning adapt the model to subject-specific expression patterns at inference time.
+  .clip-badge-row,
+  .clip-button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.3rem;
+  }
 
-## Results
+  .clip-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.76);
+    color: var(--clip-navy);
+    font-weight: 750;
+  }
 
-The method is evaluated on three challenging video-based subtle emotion recognition datasets:
+  .clip-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 8.5rem;
+    padding: 0.78rem 1.15rem;
+    border-radius: 999px;
+    background: var(--clip-navy);
+    color: #fff !important;
+    font-weight: 800;
+    text-decoration: none !important;
+    box-shadow: 0 12px 26px rgba(17, 24, 39, 0.20);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
 
-- **BioVid** for pain-related expression analysis.
-- **StressID** for stress recognition.
-- **BAH** for ambivalence/hesitancy recognition in behavioral-change videos.
+  .clip-button.secondary {
+    background: #fff;
+    color: var(--clip-navy) !important;
+    border: 1px solid rgba(17, 24, 39, 0.12);
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+  }
 
-Across these settings, CLIP-AU and CLIP-AUTT improve robustness and personalization for subtle emotion recognition compared with state-of-the-art CLIP-based facial expression recognition and test-time adaptation methods.
+  .clip-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 34px rgba(17, 24, 39, 0.24);
+  }
 
-## Takeaway
+  .clip-nav {
+    position: sticky;
+    top: 0.75rem;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.45rem;
+    margin: 0 auto 2rem;
+    padding: 0.45rem;
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.86);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  }
 
-CLIP-AUTT shows that AU-based prompt personalization can make CLIP-style video emotion recognition more interpretable, temporally consistent, and subject-aware. This is especially relevant for real-world human behavior analysis, where expressions are subtle and vary strongly across individuals.
+  .clip-nav a {
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    color: var(--clip-muted);
+    font-size: 0.92rem;
+    font-weight: 750;
+    text-decoration: none !important;
+  }
 
-## Paper Details
+  .clip-nav a:hover {
+    background: #eef6ff;
+    color: var(--clip-blue);
+  }
 
-**Title:** CLIP-AUTT: Test-Time Personalization with Action Unit Prompting for Fine-Grained Video Emotion Recognition
+  .clip-section {
+    margin: 2.5rem clamp(0.75rem, 3vw, 2.5rem);
+    padding: clamp(1.2rem, 3vw, 2rem);
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    border-radius: 1.75rem;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 18px 44px rgba(15, 23, 42, 0.07);
+  }
 
-**Authors:** Muhammad Osama Zeeshan, Masoumeh Sharafi, Benoît Savary, Alessandro Lameiras Koerich, Marco Pedersoli, Eric Granger
+  .clip-section h2 {
+    margin-bottom: 1rem;
+    color: var(--clip-navy);
+    font-size: clamp(1.65rem, 3vw, 2.35rem);
+    font-weight: 850;
+    letter-spacing: -0.035em;
+  }
 
-**Venue:** In ECCV 2026: The 19th European Conference on Computer Vision, Malmö, Sweden
+  .clip-section p,
+  .clip-section li {
+    color: #374151;
+    font-size: 1.02rem;
+    line-height: 1.75;
+  }
 
-🔗 **Read the paper:** [PDF](https://arxiv.org/pdf/2603.27999)
+  .clip-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
 
----
+  .clip-card,
+  .clip-figure-card,
+  .clip-citation-card {
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    border-radius: 1.25rem;
+    background: var(--clip-card);
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.07);
+  }
 
-## Citation {#citation}
+  .clip-card {
+    padding: 1.25rem;
+  }
 
-```bibtex
-@inproceedings{zeeshan2026clipautt,
+  .clip-card h3 {
+    margin: 0 0 0.5rem;
+    color: var(--clip-navy);
+    font-size: 1.08rem;
+    font-weight: 850;
+  }
+
+  .clip-card p {
+    margin: 0;
+    color: var(--clip-muted);
+  }
+
+  .clip-figure-card {
+    overflow: hidden;
+    padding: clamp(0.75rem, 2vw, 1.25rem);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  }
+
+  .clip-figure-card img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  .clip-caption {
+    margin: 0.85rem 0 0;
+    color: var(--clip-muted) !important;
+    font-size: 0.95rem !important;
+    text-align: center;
+  }
+
+  .clip-pill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .clip-pill-list li {
+    padding: 0.55rem 0.85rem;
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    border-radius: 999px;
+    background: #f8fbff;
+    color: #263348;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .clip-citation-card {
+    overflow: auto;
+    padding: 1rem;
+    background: #0f172a;
+  }
+
+  .clip-citation-card pre {
+    margin: 0;
+    color: #dbeafe;
+    white-space: pre-wrap;
+  }
+
+  .clip-table-wrap {
+    overflow-x: auto;
+    margin-top: 1rem;
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    border-radius: 1rem;
+    background: #fff;
+  }
+
+  .clip-results-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 760px;
+    font-size: 0.9rem;
+  }
+
+  .clip-results-table th,
+  .clip-results-table td {
+    padding: 0.7rem 0.75rem;
+    border-bottom: 1px solid #eef2f7;
+    text-align: center;
+  }
+
+  .clip-results-table th {
+    background: #f8fbff;
+    color: #1f2937;
+    font-weight: 850;
+  }
+
+  .clip-results-table td:nth-child(2),
+  .clip-results-table th:nth-child(2) {
+    text-align: left;
+  }
+
+  .clip-results-table .clip-highlight td {
+    background: #eef6ff;
+    color: #111827;
+    font-weight: 850;
+  }
+
+  .clip-results-table .clip-best td {
+    background: #ecfeff;
+    color: #0f172a;
+    font-weight: 900;
+  }
+
+  @media (max-width: 768px) {
+    .clip-card-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .clip-nav {
+      position: static;
+      border-radius: 1.25rem;
+    }
+  }
+</style>
+
+<div class="clip-autt-page">
+  <section class="clip-hero">
+    <div class="clip-kicker">ECCV 2026 · Fine-Grained Video Emotion Recognition</div>
+    <h1 class="clip-title">CLIP-AUTT</h1>
+    <p class="clip-subtitle">Test-Time Personalization with Action Unit Prompting for Fine-Grained Video Emotion Recognition</p>
+    <p class="clip-authors">
+      <strong>Muhammad Osama Zeeshan</strong> · Masoumeh Sharafi · Benoît Savary · Alessandro Lameiras Koerich · Marco Pedersoli · Eric Granger
+    </p>
+    <p class="clip-affiliation">The 19th European Conference on Computer Vision, Malmö, Sweden</p>
+    <div class="clip-badge-row">
+      <span class="clip-badge">🎭 Action Unit Prompting</span>
+      <span class="clip-badge">⏱ Test-Time Personalization</span>
+      <span class="clip-badge">🎬 Video Emotion Recognition</span>
+    </div>
+    <div class="clip-button-row">
+      <a class="clip-button" href="https://arxiv.org/pdf/2603.27999">Paper PDF</a>
+      <a class="clip-button secondary" href="#citation">Citation</a>
+    </div>
+  </section>
+
+  <nav class="clip-nav" aria-label="CLIP-AUTT page sections">
+    <a href="#abstract">Abstract</a>
+    <a href="#method">Method</a>
+    <a href="#efficiency">Efficiency & Complexity</a>
+    <a href="#results">Results</a>
+    <a href="#visualization">Visualization</a>
+    <a href="#takeaways">Takeaways</a>
+    <a href="#citation">Citation</a>
+  </nav>
+
+  <section class="clip-section" id="abstract">
+    <h2>Abstract</h2>
+    <p>
+      Fine-grained video emotion recognition requires sensitivity to subtle facial dynamics that differ strongly across people. CLIP-AUTT addresses this challenge by combining CLIP-style vision-language representations with structured facial Action Unit semantics and test-time adaptation for unseen subjects.
+    </p>
+    <p>
+      Instead of depending on noisy generated text prompts or expensive language-model supervision, CLIP-AUTT uses Action Units as interpretable prompts for localized facial muscle activations. The framework first learns subject-agnostic temporal emotion cues with CLIP-AU, then adapts AU prompts during inference to personalize predictions for each target video while maintaining temporal consistency.
+    </p>
+  </section>
+
+  <section class="clip-section" id="method">
+    <h2>Method</h2>
+    <div class="clip-figure-card">
+      <img src="{{ '/assets/img/publications/CLIP-AUTT.png' | relative_url }}" alt="CLIP-AUTT method overview">
+      <p class="clip-caption">Method overview: CLIP-AUTT selects confident temporal windows and adapts Action Unit prompts for subject-specific video emotion recognition.</p>
+    </div>
+    <div class="clip-card-grid">
+      <article class="clip-card">
+        <h3>1. AU-guided prompting</h3>
+        <p>Facial Action Units provide structured, interpretable language prompts that ground emotion recognition in localized facial movements.</p>
+      </article>
+      <article class="clip-card">
+        <h3>2. Temporal video modeling</h3>
+        <p>Video clips are modeled across time so the system can capture gradual expression changes rather than isolated frame-level signals.</p>
+      </article>
+      <article class="clip-card">
+        <h3>3. Test-time personalization</h3>
+        <p>Entropy-guided temporal window selection and prompt tuning adapt predictions to subject-specific expression patterns without labeled target data.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="clip-section" id="efficiency">
+    <h2>Efficiency and Complexity Analysis</h2>
+    <p>
+      Following Fig. 1(d) of the paper, this analysis compares throughput, WAR, trainable parameters, and GFLOPs for FT CLIP, EmoCLIP, X-CLIP, Exp-CLIP, and CLIP-AU. CLIP-AU reaches the best accuracy-efficiency tradeoff: 78.0% WAR, 16.9 videos/sec throughput, only 1.3M trainable parameters, and 0.124 GFLOPs.
+    </p>
+    <div class="clip-figure-card">
+      <img src="{{ '/assets/img/publications/clip-autt-efficiency.svg' | relative_url }}" alt="Efficiency and complexity analysis from Fig. 1(d)">
+      <p class="clip-caption">Efficiency and complexity summary from Fig. 1(d): marker size encodes trainable parameters, color encodes GFLOPs on a log scale, and CLIP-AU provides the strongest balance of accuracy, speed, parameter efficiency, and compute.</p>
+    </div>
+  </section>
+
+  <section class="clip-section" id="results">
+    <h2>Results: comparison with CLIP-based FER and TTA</h2>
+    <p>
+      Table 1 reports averaged results over 10 target subjects per dataset. CLIP-AU improves the fine-tuning setting with AU-guided temporal alignment, while CLIP-AUTT provides the strongest test-time adaptation results across BioVid, StressID, and BAH.
+    </p>
+    <div class="clip-table-wrap">
+      <table class="clip-results-table">
+        <thead>
+          <tr><th>Setting</th><th>Method</th><th>BioVid WAR</th><th>BioVid F1</th><th>StressID WAR</th><th>StressID F1</th><th>BAH WAR</th><th>BAH F1</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ZS</td><td>CLIP-ViT-B/32 (ICML’21)</td><td>50.0</td><td>33.3</td><td>60.4</td><td>34.8</td><td>39.5</td><td>28.1</td></tr>
+          <tr><td>FT</td><td>CLIP-ViT-B/32 (ICML’21)</td><td>69.7</td><td>66.6</td><td>67.0</td><td>44.5</td><td>60.4</td><td>39.8</td></tr>
+          <tr><td>FT</td><td>EmoCLIP (FG’24)</td><td>67.7</td><td>63.4</td><td>63.5</td><td>35.9</td><td>56.2</td><td>36.5</td></tr>
+          <tr><td>FT</td><td>X-CLIP (ECCV’22)</td><td>70.9</td><td>57.9</td><td>62.3</td><td>41.3</td><td>63.0</td><td>39.2</td></tr>
+          <tr><td>FT</td><td>Exp-CLIP (WACV’25)</td><td>70.2</td><td>66.7</td><td>63.1</td><td>44.5</td><td>62.2</td><td>38.5</td></tr>
+          <tr class="clip-highlight"><td>FT</td><td>CLIP-AU</td><td>78.0</td><td>74.8</td><td>66.5</td><td>58.5</td><td>68.3</td><td>40.3</td></tr>
+          <tr><td>TTA</td><td>TPT (NeurIPS’22)</td><td>71.1</td><td>67.5</td><td>70.9</td><td>57.9</td><td>65.6</td><td>39.7</td></tr>
+          <tr><td>TTA</td><td>TDA (CVPR’24)</td><td>71.4</td><td>68.2</td><td>69.7</td><td>49.9</td><td>65.2</td><td>39.9</td></tr>
+          <tr><td>TTA</td><td>DPE (NeurIPS’24)</td><td>73.1</td><td>69.6</td><td>71.3</td><td>54.2</td><td>66.7</td><td>39.4</td></tr>
+          <tr><td>TTA</td><td>PromptAlign (NeurIPS’23)</td><td>75.3</td><td>71.6</td><td>74.6</td><td>53.2</td><td>67.1</td><td>39.7</td></tr>
+          <tr><td>TTA</td><td>ReTA (ACMMM’25)</td><td>75.1</td><td>71.3</td><td>71.8</td><td>52.8</td><td>67.6</td><td>39.8</td></tr>
+          <tr><td>TTA</td><td>T3AL (CVPR’24)</td><td>76.1</td><td>72.9</td><td>75.9</td><td>59.4</td><td>67.9</td><td>40.7</td></tr>
+          <tr class="clip-best"><td>TTA</td><td>CLIP-AUTT</td><td>81.5</td><td>78.0</td><td>80.8</td><td>77.9</td><td>69.8</td><td>41.1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="clip-section" id="visualization">
+    <h2>Visualization: personalized AU alignment</h2>
+    <p>
+      The right side of Fig. 4 qualitatively compares top activated AUs from CLIP-AU and CLIP-AUTT against AU activations estimated by OpenFace. The adapted CLIP-AUTT prompts better align with subject-specific eye and mouth movements, producing more meaningful AU combinations for the target subject.
+    </p>
+    <div class="clip-figure-card">
+      <img src="{{ '/assets/img/publications/clip-autt-au-visualization.svg' | relative_url }}" alt="Qualitative AU visualization inspired by the right side of Fig. 4">
+      <p class="clip-caption">Visualization inspired by Fig. 4 right: CLIP-AUTT refines generic AU semantics into more subject-specific AU activation patterns.</p>
+    </div>
+  </section>
+
+  <section class="clip-section" id="takeaways">
+    <h2>Key takeaways</h2>
+    <div class="clip-card-grid">
+      <article class="clip-card">
+        <h3>Interpretable</h3>
+        <p>Action Unit prompts connect model predictions to recognizable facial muscle movements.</p>
+      </article>
+      <article class="clip-card">
+        <h3>Subject-aware</h3>
+        <p>Prompt tuning at inference time personalizes the representation for unseen individuals.</p>
+      </article>
+      <article class="clip-card">
+        <h3>Practical</h3>
+        <p>The method targets real-world behavioral analysis where labels are scarce and expressions are subtle.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="clip-section" id="citation">
+    <h2>Citation</h2>
+    <div class="clip-citation-card">
+<pre><code>@inproceedings{zeeshan2026clipautt,
   title={CLIP-AUTT: Test-Time Personalization with Action Unit Prompting for Fine-Grained Video Emotion Recognition},
   author={Zeeshan, Muhammad Osama and Sharafi, Masoumeh and Savary, Beno{\^i}t and Koerich, Alessandro Lameiras and Pedersoli, Marco and Granger, Eric},
   booktitle={In ECCV 2026: The 19th European Conference on Computer Vision, Malmö, Sweden},
   year={2026}
-}
-```
+}</code></pre>
+    </div>
+  </section>
 
-## Contact
-
-Feel free to reach out for discussion or collaboration.
+  <section class="clip-section" id="contact">
+    <h2>Contact</h2>
+    <p>For questions, discussion, or collaboration, please reach out to the authors.</p>
+  </section>
+</div>

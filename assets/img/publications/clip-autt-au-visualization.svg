@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+  <title id="title">Qualitative AU visualization</title>
+  <desc id="desc">A stylized right-panel figure 4 visualization comparing OpenFace, CLIP-AU, and CLIP-AUTT top Action Units.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8fbff"/></linearGradient>
+    <linearGradient id="good" x1="0" x2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
+  </defs>
+  <rect width="920" height="520" rx="34" fill="url(#bg)"/>
+  <text x="52" y="58" font-family="Inter, Arial" font-size="28" font-weight="800" fill="#111827">Qualitative AU alignment</text>
+  <text x="52" y="88" font-family="Inter, Arial" font-size="15" fill="#667085">Fig. 4 right: CLIP-AUTT better matches externally estimated OpenFace AU activations after personalization.</text>
+  <g transform="translate(70 126)">
+    <rect width="210" height="300" rx="24" fill="#eef6ff" stroke="#dbeafe"/>
+    <circle cx="105" cy="115" r="70" fill="#fde2d2" stroke="#334155" stroke-width="3"/>
+    <circle cx="78" cy="105" r="8" fill="#111827"/><circle cx="132" cy="105" r="8" fill="#111827"/>
+    <path d="M66 78 Q80 66 98 76" fill="none" stroke="#111827" stroke-width="5" stroke-linecap="round"/>
+    <path d="M112 76 Q132 64 148 78" fill="none" stroke="#111827" stroke-width="5" stroke-linecap="round"/>
+    <path d="M82 150 Q105 168 130 150" fill="none" stroke="#111827" stroke-width="5" stroke-linecap="round"/>
+    <text x="47" y="238" font-family="Inter, Arial" font-size="18" font-weight="800" fill="#111827">BioVid sample</text>
+    <text x="56" y="268" font-family="Inter, Arial" font-size="15" fill="#475569">Predicted: Pain</text>
+  </g>
+  <g font-family="Inter, Arial" font-size="15">
+    <text x="332" y="143" font-weight="800" fill="#111827">OpenFace estimate</text>
+    <text x="332" y="251" font-weight="800" fill="#111827">CLIP-AU</text>
+    <text x="332" y="359" font-weight="800" fill="#111827">CLIP-AUTT</text>
+    <g transform="translate(332 158)">
+      <text y="24" fill="#475569">AU06</text><rect x="58" y="8" width="330" height="22" rx="11" fill="#e2e8f0"/><rect x="58" y="8" width="275" height="22" rx="11" fill="#94a3b8"/>
+      <text y="58" fill="#475569">AU07</text><rect x="58" y="42" width="330" height="22" rx="11" fill="#e2e8f0"/><rect x="58" y="42" width="246" height="22" rx="11" fill="#94a3b8"/>
+    </g>
+    <g transform="translate(332 266)">
+      <text y="24" fill="#475569">AU12</text><rect x="58" y="8" width="330" height="22" rx="11" fill="#e2e8f0"/><rect x="58" y="8" width="180" height="22" rx="11" fill="#93c5fd"/>
+      <text y="58" fill="#475569">AU25</text><rect x="58" y="42" width="330" height="22" rx="11" fill="#e2e8f0"/><rect x="58" y="42" width="165" height="22" rx="11" fill="#93c5fd"/>
+    </g>
+    <g transform="translate(332 374)">
+      <text y="24" fill="#475569">AU06</text><rect x="58" y="8" width="330" height="22" rx="11" fill="#e2e8f0"/><rect x="58" y="8" width="292" height="22" rx="11" fill="url(#good)"/>
+      <text y="58" fill="#475569">AU07</text><rect x="58" y="42" width="330" height="22" rx="11" fill="#e2e8f0"/><rect x="58" y="42" width="260" height="22" rx="11" fill="url(#good)"/>
+    </g>
+  </g>
+  <path d="M760 179 L812 179 L812 397 L760 397" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <text x="718" y="447" font-family="Inter, Arial" font-size="16" font-weight="800" fill="#1d4ed8">Personalization improves AU agreement</text>
+</svg>
