@@ -468,16 +468,16 @@ favicon: publications/clip-autt-logo.png
     </div>
     <div class="clip-card-grid">
       <article class="clip-card">
-        <h3>1. AU-guided prompting</h3>
-        <p>Facial Action Units provide structured, interpretable language prompts that ground emotion recognition in localized facial movements.</p>
+        <h3>1. AU-guided semantic prompting</h3>
+        <p>Facial Action Units provide structured and interpretable prompts that ground emotion recognition in localized facial movements rather than generic class descriptions.</p>
       </article>
       <article class="clip-card">
-        <h3>2. Temporal video modeling</h3>
-        <p>Video clips are modeled across time so the system can capture gradual expression changes rather than isolated frame-level signals.</p>
+        <h3>2. AU-based generic emotion modeling</h3>
+        <p>The model learns one-to-many relationships between emotion classes and their associated AU patterns, allowing it to detect corresponding facial cues across video frames and learn a generic classifier for subtle emotion recognition.</p>
       </article>
       <article class="clip-card">
-        <h3>3. Test-time personalization</h3>
-        <p>Entropy-guided temporal window selection and prompt tuning adapt predictions to subject-specific expression patterns without labeled target data.</p>
+        <h3>3. Lightweight test-time personalization</h3>
+        <p>A small set of AU prompt embeddings is adapted to each unseen, unlabeled target subject. Entropy-guided window selection identifies the most informative video segment, enabling subject-specific personalization without full-model retraining or access to source data.</p>
       </article>
     </div>
   </details>
