@@ -124,6 +124,7 @@ favicon: publications/clip-autt-logo.png
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
     min-width: 8.5rem;
     padding: 0.78rem 1.15rem;
     border-radius: 999px;
@@ -428,8 +429,9 @@ favicon: publications/clip-autt-logo.png
       <span class="clip-badge">🎬 Video Emotion Recognition</span>
     </div>
     <div class="clip-button-row">
-      <a class="clip-button" href="https://arxiv.org/pdf/2603.27999">Paper PDF</a>
+      <a class="clip-button" href="https://arxiv.org/pdf/2603.27999" target="_blank" rel="noopener noreferrer" aria-label="Read CLIP-AUTT on arXiv"><i class="ai ai-arxiv" aria-hidden="true"></i> arXiv</a>
       <a class="clip-button secondary" href="#citation">Citation</a>
+      <a class="clip-button" href="https://github.com/osamazeeshan/CLIP-AUTT" target="_blank" rel="noopener noreferrer" aria-label="View CLIP-AUTT code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
     </div>
   </section>
 
