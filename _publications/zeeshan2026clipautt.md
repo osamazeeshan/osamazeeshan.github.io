@@ -95,8 +95,18 @@ favicon: publications/clip-autt-logo.png
     line-height: 1.65;
   }
 
+  .clip-authors {
+    color: var(--clip-blue);
+    font-weight: 650;
+  }
+
   .clip-authors strong {
+    color: var(--clip-blue);
+  }
+
+  .clip-affiliation {
     color: var(--clip-ink);
+    font-weight: 800;
   }
 
   .clip-badge-row,
@@ -106,6 +116,11 @@ favicon: publications/clip-autt-logo.png
     justify-content: center;
     gap: 0.75rem;
     margin-top: 1.3rem;
+  }
+
+  .clip-button-row {
+    gap: 0.9rem;
+    margin-top: 1.6rem;
   }
 
   .clip-badge {
@@ -124,23 +139,31 @@ favicon: publications/clip-autt-logo.png
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.55rem;
     min-width: 8.5rem;
-    padding: 0.78rem 1.15rem;
-    border-radius: 999px;
-    background: var(--clip-navy);
+    padding: 0.72rem 1.35rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1.4rem;
+    background: #333333;
     color: #fff !important;
+    font-size: 1.02rem;
     font-weight: 800;
+    line-height: 1;
     text-decoration: none !important;
-    box-shadow: 0 12px 26px rgba(17, 24, 39, 0.20);
+    box-shadow: 0 12px 26px rgba(17, 24, 39, 0.24);
     transition: transform 0.18s ease, box-shadow 0.18s ease;
   }
 
   .clip-button.secondary {
-    background: #fff;
-    color: var(--clip-navy) !important;
-    border: 1px solid rgba(17, 24, 39, 0.12);
-    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+    background: #333333;
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 12px 26px rgba(17, 24, 39, 0.24);
+  }
+
+  .clip-button i {
+    font-size: 1.05em;
+    line-height: 1;
   }
 
   .clip-button:hover {
