@@ -140,8 +140,8 @@ favicon: publications/clip-autt-logo.png
     align-items: center;
     justify-content: center;
     gap: 0.55rem;
-    min-width: 8.5rem;
-    padding: 0.72rem 1.35rem;
+    min-width: 7.25rem;
+    padding: 0.72rem 1.1rem;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 1.4rem;
     background: #333333;
