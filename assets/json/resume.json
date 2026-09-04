@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Muhammad Osama Zeeshan",
-    "label": "Computer Vision Scientist | Deep Learning Researcher | Software Developer",
+    "label": "Computer Vision and Machine Learning Researcher",
     "image": "",
     "email": "osamaz.oz31@gmail.com",
     "phone": "+1-438-357-6482",
     "url": "https://osamazeeshan.github.io/",
-    "summary": "Computer Vision Scientist completing a Ph.D. in June 2026, with experience developing deep learning models for real-world visual understanding, multimodal learning, and robust model adaptation. Skilled in building ML pipelines using Python, PyTorch, TensorFlow, and OpenCV, with experience working on noisy, heterogeneous visual datasets and systematically improving model performance through evaluation, ablation studies, and data preprocessing. Published in ICLR, WACV, and CVPR Workshops, with prior industry experience developing production software systems and applied computer vision pipelines.",
+    "summary": "Computer Vision and Machine Learning researcher with a Ph.D. in Systems Engineering at École de technologie supérieure (ÉTS). My research focuses on human-centered visual intelligence, multimodal learning, vision-language models, facial dynamics, and personalized model adaptation under real-world distribution shifts. I also bring more than five years of industry engineering experience in software development, image analysis, and video-processing systems. My research has been published in ECCV, ICLR, WACV, and CVPR Workshops, and I am particularly interested in digital humans, neural representations, and AI-native visual content creation.",
     "location": {
       "city": "Montreal",
       "region": "QC",
@@ -27,33 +27,33 @@
   },
   "work": [
     {
-      "name": "STARTS, Inria - French National Institute for Research in Digital Science and Technology",
-      "position": "Visiting Research Scientist",
-      "url": "https://www.inria.fr/",
-      "startDate": "2026-01",
-      "endDate": "2026-04",
-      "summary": "Valbonne, France",
-      "highlights": [
-        "Conducted collaborative research on computationally efficient ML methods for personalized human behavior and expression analysis.",
-        "Investigated test-time multimodal domain adaptation approaches, eliminating the need for original training data while improving model robustness and efficiency.",
-        "Performed a technology watch on emerging AI/ML research relevant to efficient personalized modeling."
-      ]
-    },
-    {
       "name": "LIVIA & ILLS Labs - École de technologie supérieure (ÉTS)",
-      "position": "Computer Vision Researcher",
+      "position": "Machine Learning Researcher",
       "url": "https://www.etsmtl.ca/en/labs/livia",
       "startDate": "2022-01",
       "endDate": "Present",
       "summary": "Montreal, Canada",
       "highlights": [
-        "Develop deep learning models for visual behavior and expression analysis using Python and PyTorch.",
-        "Design personalized and domain-adaptive computer vision methods to improve robustness across subjects, environments, and data conditions.",
-        "Propose multimodal learning approaches integrating visual, physiological, and audio signals for robust prediction in real-world settings.",
-        "Build end-to-end ML pipelines for data preprocessing, training, evaluation, ablation studies, and reproducible experimentation.",
-        "Conduct large-scale experiments to evaluate accuracy, robustness, generalization, and cross-domain performance on noisy real-world datasets.",
-        "Co-developed the BAH dataset for ambivalence and hesitancy recognition, including benchmarking and evaluation protocols.",
-        "Collaborate with interdisciplinary researchers to refine model design, evaluation criteria, and experimental methodology."
+        "Developed personalized deep learning models for behavior and emotion recognition, adapting to individual-specific patterns and variability.",
+        "Designed and implemented unsupervised, gradual, multi-source, and test-time domain adaptation methods for robust generalization under distribution shifts.",
+        "Built multimodal learning approaches integrating visual, physiological, and audio signals for adaptive prediction and behavior analysis.",
+        "Conducted large-scale experimental evaluations on noisy real-world datasets to assess robustness, cross-domain performance, and reproducibility.",
+        "Created Python and PyTorch pipelines for preprocessing, model training, evaluation, ablation studies, and robustness analysis.",
+        "Collaborated with interdisciplinary researchers on personalized and multimodal AI systems across behavioral health, computer vision, and affective computing.",
+        "Co-developed the BAH dataset for ambivalence and hesitancy recognition, enabling research in personalization, zero-shot learning, and domain adaptation."
+      ]
+    },
+    {
+      "name": "STARS, Inria - French National Institute for Research in Digital Science and Technology",
+      "position": "Visiting Research Scientist",
+      "url": "https://www.inria.fr/",
+      "startDate": "2026-02",
+      "endDate": "2026-04",
+      "summary": "Valbonne, France",
+      "highlights": [
+        "Conducted collaborative research on computationally efficient machine learning methods for personalized human behavior and expression analysis.",
+        "Investigated test-time multimodal domain adaptation methods that improve robustness and efficiency without requiring access to original training data.",
+        "Explored personalized adaptation strategies for models operating under changing human behavior, subtle facial expressions, and real-world distribution shifts."
       ]
     },
     {
@@ -62,12 +62,11 @@
       "url": "",
       "startDate": "2019-01",
       "endDate": "2022-01",
-      "summary": "Production software systems and data-driven applications",
+      "summary": "",
       "highlights": [
-        "Built scalable backend systems and RESTful APIs for production data-driven applications.",
-        "Designed modular, maintainable software components with a focus on reliability, performance, and scalability.",
-        "Collaborated with cross-functional teams to translate product requirements into production-ready systems.",
-        "Applied software engineering best practices, including debugging, documentation, version control, and system optimization."
+        "Developed scalable backend systems and RESTful APIs supporting data-driven production applications.",
+        "Collaborated with cross-functional teams to design and implement reliable software systems.",
+        "Optimized systems for performance, reliability, and scalability across deployment environments."
       ]
     },
     {
@@ -76,26 +75,36 @@
       "url": "",
       "startDate": "2017-09",
       "endDate": "2019-01",
-      "summary": "Applied computer vision and multimedia retrieval",
+      "summary": "",
       "highlights": [
-        "Developed computer vision pipelines for Urdu text detection and recognition in low-quality video streams.",
-        "Built indexing and retrieval systems for large multimedia datasets, enabling visual content search.",
-        "Designed data preprocessing workflows for noisy real-world video data, including low-resolution frames and variable lighting conditions.",
-        "Applied Python, OpenCV, and TensorFlow to build and evaluate applied image/video processing models."
+        "Developed computer vision pipelines for detecting and recognizing text in video streams.",
+        "Built systems for indexing and retrieving visual information from large multimedia datasets.",
+        "Designed data-processing workflows for noisy, low-quality, real-world visual data."
       ]
     },
     {
       "name": "Steprobotics",
-      "position": "Android Developer",
+      "position": "Android Developer & Image Analyst",
       "url": "",
       "startDate": "2015-02",
       "endDate": "2017-08",
-      "summary": "Mobile computer vision for solar irradiance estimation",
+      "summary": "",
       "highlights": [
-        "Developed computer vision algorithms for skyline and shading analysis to support solar irradiance estimation.",
-        "Built the Step Solar Android application, integrating geospatial analysis, mobile data capture, and external APIs.",
-        "Designed image-processing workflows for real-world outdoor visual data with variable lighting and scene conditions.",
-        "Collaborated with engineering teams to integrate CV outputs into a user-facing mobile application."
+        "Developed computer vision algorithms for solar irradiance, skyline, and shading estimation.",
+        "Built the Step Solar mobile application integrating geospatial analysis, local data storage, and external APIs."
+      ]
+    },
+    {
+      "name": "Air University",
+      "position": "Machine Learning Research Assistant - Computational Biology",
+      "url": "https://www.au.edu.pk/",
+      "startDate": "2014-01",
+      "endDate": "2015-03",
+      "summary": "Islamabad, Pakistan",
+      "highlights": [
+        "Developed machine learning and image-analysis pipelines for microscopy-based sperm cell classification and recognition.",
+        "Processed high-resolution sperm microscopy images and extracted discriminative visual features to identify head and tail abnormalities according to WHO criteria.",
+        "Developed and evaluated classification models for computer-aided semen analysis across Normal, Abnormal, and Neutral categories."
       ]
     }
   ],
@@ -107,7 +116,7 @@
       "area": "Deep Learning, Multimodal AI, Domain Adaptation, Human Behavior Analysis",
       "studyType": "Ph.D. in Systems Engineering",
       "startDate": "2022-01",
-      "endDate": "2026-06"
+      "endDate": "2026"
     },
     {
       "institution": "Bahria University",
@@ -130,38 +139,56 @@
   ],
   "publications": [
     {
-      "name": "BAH Dataset for Ambivalence/Hesitancy Recognition in Videos for Digital Behavioural Change",
-      "publisher": "International Conference on Learning Representations (ICLR)",
+      "name": "CLIP-AUTT: Test-Time Personalization with Action Unit Prompting for Fine-Grained Video Emotion Recognition",
+      "publisher": "European Conference on Computer Vision (ECCV)",
       "releaseDate": "2026",
-      "url": "https://osamazeeshan.github.io/publications/gonzalez2025bah/",
-      "summary": "Co-developed a publicly available benchmark for ambivalence and hesitancy recognition in behavioral analysis."
-    },
-    {
-      "name": "Personalized Feature Translation for Expression Recognition: An Efficient Source-Free Domain Adaptation Method",
-      "publisher": "International Conference on Learning Representations (ICLR)",
-      "releaseDate": "2026",
-      "url": "https://osamazeeshan.github.io/publications/sharafi2026personalized/",
-      "summary": "Efficient source-free domain adaptation method for personalized expression recognition."
+      "url": "https://osamazeeshan.github.io/publications/zeeshan2026clipautt/",
+      "summary": ""
     },
     {
       "name": "MuSACo: Multimodal Subject-Specific Selection and Adaptation for Expression Recognition with Co-Training",
       "publisher": "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
       "releaseDate": "2026",
       "url": "https://osamazeeshan.github.io/publications/zeeshan2026musaco/",
-      "summary": "Subject-specific multimodal source selection and adaptation for robust expression recognition."
-    }
-  ],
-  "projects": [
+      "summary": ""
+    },
     {
-      "name": "Research Impact & Publications",
-      "startDate": "2026",
-      "summary": "Published in top-tier AI venues including ICLR, WACV, and CVPR Workshops.",
-      "highlights": [
-        "300+ citations and h-index of 8 on Google Scholar.",
-        "Co-developed the BAH dataset, a publicly available benchmark for ambivalence and hesitancy recognition in behavioral analysis."
-      ]
+      "name": "Personalized Feature Translation for Expression Recognition: An Efficient Source-Free Domain Adaptation Method",
+      "publisher": "International Conference on Learning Representations (ICLR)",
+      "releaseDate": "2026",
+      "url": "https://osamazeeshan.github.io/publications/sharafi2026personalized/",
+      "summary": ""
+    },
+    {
+      "name": "BAH Dataset for Ambivalence/Hesitancy Recognition in Videos for Behavioural Change",
+      "publisher": "International Conference on Learning Representations (ICLR)",
+      "releaseDate": "2026",
+      "url": "https://osamazeeshan.github.io/publications/gonzalez2025bah/",
+      "summary": ""
+    },
+    {
+      "name": "Progressive Multi-Source Domain Adaptation for Personalized Facial Expression Recognition",
+      "publisher": "IEEE Transactions on Affective Computing",
+      "releaseDate": "2025",
+      "url": "https://osamazeeshan.github.io/publications/zeeshan2025progressive/",
+      "summary": ""
+    },
+    {
+      "name": "Subject-Based Domain Adaptation for Facial Expression Recognition",
+      "publisher": "IEEE International Conference on Automatic Face and Gesture Recognition (FG)",
+      "releaseDate": "2024",
+      "url": "https://osamazeeshan.github.io/publications/zeeshan2024subject/",
+      "summary": ""
+    },
+    {
+      "name": "A Joint Cross-Attention Model for Audio-Visual Fusion in Dimensional Emotion Recognition",
+      "publisher": "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+      "releaseDate": "2022",
+      "url": "https://osamazeeshan.github.io/publications/praveen2022joint/",
+      "summary": ""
     }
   ],
+  "projects": [],
   "awards": [
     {
       "title": "FRQNT Award",
@@ -188,44 +215,35 @@
       "name": "Programming",
       "level": "Advanced",
       "icon": "fa-solid fa-code",
-      "keywords": ["Python", "Java", "JavaScript", "SQL"]
+      "keywords": ["Python", "SQL", "Java"]
     },
     {
-      "name": "Frameworks & Libraries",
+      "name": "Machine Learning & AI",
       "level": "Advanced",
-      "icon": "fa-solid fa-layer-group",
-      "keywords": ["PyTorch", "TensorFlow", "Keras", "Scikit-learn", "NumPy", "Pandas", "SciPy", "OpenCV"]
-    },
-    {
-      "name": "Computer Vision",
-      "level": "Advanced",
-      "icon": "fa-solid fa-eye",
-      "keywords": ["Image Classification", "Object Detection", "Localization", "Tracking", "OCR", "Image Processing", "Feature Extraction"]
-    },
-    {
-      "name": "Data & ML Systems",
-      "level": "Advanced",
-      "icon": "fa-solid fa-database",
+      "icon": "fa-solid fa-brain",
       "keywords": [
-        "Data Preprocessing",
-        "Data Augmentation",
-        "Noisy Data Handling",
-        "Large-scale Experiments",
-        "Model Benchmarking",
-        "Reproducible ML Pipelines"
+        "Computational Efficiency",
+        "Model Complexity Analysis",
+        "Computer Vision",
+        "Multimodal Learning",
+        "Self-Supervised Learning",
+        "Domain Adaptation",
+        "Test-Time Adaptation",
+        "Generative Models",
+        "Evaluation & Benchmarking"
       ]
     },
     {
-      "name": "Machine Learning",
+      "name": "Frameworks & Tools",
       "level": "Advanced",
-      "icon": "fa-solid fa-brain",
-      "keywords": ["Deep Learning", "CNNs", "Transformers", "Multimodal Learning", "Domain Adaptation", "Model Evaluation", "Classical ML"]
+      "icon": "fa-solid fa-layer-group",
+      "keywords": ["PyTorch", "TensorFlow", "OpenCV", "Git", "Linux"]
     },
     {
-      "name": "Software Engineering",
+      "name": "Research Engineering",
       "level": "Advanced",
-      "icon": "fa-solid fa-gears",
-      "keywords": ["RESTful APIs", "Backend Systems", "Modular Design", "Debugging", "Git", "Linux"]
+      "icon": "fa-solid fa-flask",
+      "keywords": ["Reproducible Pipelines", "Heterogeneous Data Preprocessing", "Large-Scale Experiments", "Ablation Studies", "Benchmarking"]
     }
   ],
   "languages": [],
