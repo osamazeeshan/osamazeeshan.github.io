@@ -32,3 +32,11 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"sia":
+  - firstname: ["Lorenzo", "L."]
+    url: https://arxiv.org/search/cs?searchtype=author&query=Sia%2C+L
+
+"richet":
+  - firstname: ["Nicolas", "N."]
+    url: https://arxiv.org/search/cs?searchtype=author&query=Richet%2C+N
