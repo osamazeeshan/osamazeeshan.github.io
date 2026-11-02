@@ -452,6 +452,7 @@ favicon: publications/clip-autt-logo.png
       <span class="clip-badge">🎬 Video Emotion Recognition</span>
     </div>
     <div class="clip-button-row">
+      <a class="clip-button" href="https://link.springer.com/chapter/10.1007/978-3-032-37095-2_37" target="_blank" rel="noopener noreferrer" aria-label="Read CLIP-AUTT on Springer">Springer</a>
       <a class="clip-button" href="https://arxiv.org/pdf/2603.27999" target="_blank" rel="noopener noreferrer" aria-label="Read CLIP-AUTT on arXiv"><i class="ai ai-arxiv" aria-hidden="true"></i> arXiv</a>
       <a class="clip-button secondary" href="#citation">Citation</a>
       <a class="clip-button" href="https://github.com/osamazeeshan/CLIP-AUTT" target="_blank" rel="noopener noreferrer" aria-label="View CLIP-AUTT code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
