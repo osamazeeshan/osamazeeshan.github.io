@@ -9,6 +9,30 @@ nav_order: 4
 
 ---
 
+#### Invited Talk — IMDS User Club 2026
+
+I was invited to give a talk on **“Advances in Deep Learning for Document Analysis and Understanding”** at the **IMDS User Club 2026 (Club Utilisateurs IMDS)**, held on **October 7–8, 2026**, at the **Château Frontenac in Québec City, Canada**.
+
+The presentation explored recent advances in deep learning for document analysis and the opportunities they create for automated document understanding and intelligent document processing. The event brought together IMDS clients, partners, researchers, and industry specialists to exchange ideas on applying artificial intelligence to secure information management and document processing, while marking IMDS’s 30th anniversary.
+
+Thank you to the IMDS team for the invitation and to everyone who took part in the discussions.
+
+##### Talk Highlights
+
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+    <video width="100%" controls playsinline preload="metadata" aria-label="Highlights from the invited talk at IMDS User Club 2026" style="border: 1px solid #ddd; border-radius: 4px;">
+      <source src="{{ '/assets/img/teaching/imds-user-club-2026.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+      <a href="{{ '/assets/img/teaching/imds-user-club-2026.mp4' | relative_url }}">Watch the IMDS User Club talk highlights</a>.
+    </video>
+  </div>
+</div>
+
+<a href="{{ '/assets/img/teaching/imds-user-club-2026.mp4' | relative_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">Watch IMDS Talk Highlights</a>
+
+---
+
 #### Summer School
 
 ##### Faculty Attestation
